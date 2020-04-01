@@ -3,7 +3,6 @@ body {
     font-weight: 100;
     margin: 0;
     padding: 0;
-    // line-height: 1.6rem;
     background-image: url(../assets/pic2.jpg);
     background-size: contain;
     background-repeat: repeat-y;
@@ -13,7 +12,7 @@ header {
     height: 94vh;
     width: 90%;
     margin: 0 auto;
-    background-color: rgba(255,255,255, 0.2);
+    background-color: rgba(255,255,255, 0.05);
     text-align: center;
 }
 
@@ -26,16 +25,16 @@ header {
 .mainTitle {
     text-align: center;
     font-size: 7rem;
-    color: #C9082A;
+    color: $color-one;
     margin-top: 3rem;
     margin-bottom: 0;
     font-weight: 300;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .goatAcronym {
     font-size: 3rem;
-    color: white;
+    color: $color-three;
 }
 
 .strongGoat {
@@ -43,7 +42,7 @@ header {
 }
 
 .titleButton {
-    color: #000;
+    color: $color-four;
     background-color: rgba(255,255,255,0.4);
     font-size: 2.5rem;
     border-radius: 10px;
@@ -54,10 +53,10 @@ header {
     min-height: 80vh;
     margin: 5rem auto;
     padding: 3rem;
-    background: white;
+    background: $color-three;
     display: flex; 
     flex-direction: column;
-    text-shadow: 0 1px black;
+    text-shadow: 0 1px #000;
     box-shadow: 1px 1px rgba(0,0,0,0.3);
 }
 
@@ -87,8 +86,8 @@ header {
 }
 
 .choice input:checked .choice {
-    color: #000;
-    background: rgb(8,3,140);
+    color: $color-four;
+    background: $color-two;
 }
 
 .choice:hover {
@@ -108,7 +107,7 @@ button {
     margin: 0 auto;
     border: none;
     font-weight: 300;
-    color: black;
+    color: $color-four;
     outline: none;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
 }
@@ -121,11 +120,11 @@ button:focus {
 }
 
 button.next {
-    background: #17408B;
+    background: $color-two;
 }
 
 button.previous {
-    background: #C9082A;
+    background: $color-one;
 }
 
 .results {
@@ -145,7 +144,7 @@ button.previous {
 
 .copyright {
     text-align: center;
-    background-color: #000;
-    color: white;
+    background-color: $color-four;
+    color: $color-three;
     letter-spacing: 1.5px;
 }

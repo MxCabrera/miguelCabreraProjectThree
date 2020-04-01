@@ -249,7 +249,7 @@ header {
   height: 94vh;
   width: 90%;
   margin: 0 auto;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   text-align: center;
 }
 
@@ -271,12 +271,12 @@ header {
   margin-top: 3rem;
   margin-bottom: 0;
   font-weight: 300;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .goatAcronym {
   font-size: 3rem;
-  color: white;
+  color: #FFF;
 }
 
 .strongGoat {
@@ -295,7 +295,7 @@ header {
   min-height: 80vh;
   margin: 5rem auto;
   padding: 3rem;
-  background: white;
+  background: #FFF;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,7 +303,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-shadow: 0 1px black;
+  text-shadow: 0 1px #000;
   -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -333,7 +333,7 @@ header {
 
 .choice input:checked .choice {
   color: #000;
-  background: #08038c;
+  background: #17408B;
 }
 
 .choice:hover {
@@ -353,7 +353,7 @@ button {
   margin: 0 auto;
   border: none;
   font-weight: 300;
-  color: black;
+  color: #000;
   outline: none;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -403,6 +403,6 @@ button.previous {
 .copyright {
   text-align: center;
   background-color: #000;
-  color: white;
+  color: #FFF;
   letter-spacing: 1.5px;
 }
