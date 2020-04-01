@@ -1,13 +1,52 @@
 body {
-    background-color: blue;
     font-family: 'Oswald', sans-serif;
     font-weight: 100;
     margin: 0;
     padding: 0;
-    line-height: 1.6rem;
+    // line-height: 1.6rem;
     background-image: url(../assets/pic2.jpg);
     background-size: contain;
     background-repeat: repeat-y;
+}
+
+header {
+    height: 94vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255, 0.2);
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    position: center;
+}
+
+.mainTitle {
+    text-align: center;
+    font-size: 7rem;
+    color: #C9082A;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px black;
+}
+
+.goatAcronym {
+    font-size: 3rem;
+    color: white;
+}
+
+.strongGoat {
+    width: 37%;
+}
+
+.titleButton {
+    color: #000;
+    background-color: rgba(255,255,255,0.4);
+    font-size: 2.5rem;
+    border-radius: 10px;
 }
 
 .quizBox {
@@ -96,9 +135,12 @@ button.previous {
     display: flex;
     flex-direction: column; 
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
-    // margin: 0 auto;
+}
+
+.results h2 {
+    margin: 0;
 }
 
 .copyright {
