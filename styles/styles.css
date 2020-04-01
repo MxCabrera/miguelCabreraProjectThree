@@ -242,6 +242,9 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6rem;
+  background-image: url(../assets/pic2.jpg);
+  background-size: contain;
+  background-repeat: repeat-y;
 }
 
 .quizBox {
@@ -283,6 +286,49 @@ body {
   margin: 0 auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
+}
+
+.choice input:checked .choice {
+  color: #000;
+  background: #08038c;
+}
+
+.choice:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.mainButtons > * {
+  margin: 1rem;
+}
+
+.mainButtons {
+  margin: 0 auto;
+}
+
+button {
+  padding: 0.5rem 1.5rem;
+  margin: 0 auto;
+  border: none;
+  font-weight: 300;
+  color: black;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+button:hover,
+button:focus {
+  font-weight: 500;
+  -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+button.next {
+  background: #17408B;
+}
+
+button.previous {
+  background: #C9082A;
 }
