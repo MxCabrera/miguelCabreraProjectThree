@@ -332,3 +332,30 @@ button.next {
 button.previous {
   background: #C9082A;
 }
+
+.results {
+  font-size: 2.5rem;
+  min-height: 100vh;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #000;
+  color: white;
+  letter-spacing: 1.5px;
+}
