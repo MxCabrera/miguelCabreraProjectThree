@@ -95,11 +95,19 @@ function nextQuestion(){
 
     userChoice.checked = false;
 
-    if (mainQuestion == totalQuestions - 1) {
-        results.innerHTML = 
-        `
-        <p>Your final score is : ${finalScore}</p>
-        <p>You are Michael Jordan!</p>`
+    
+
+
+    if (mainQuestion == totalQuestions) {
+        if (finalScore >= 5 && finalScore <= 7) {
+            results.innerHTML = `
+            <h1>You are Lebron James!</h1>
+            <p>3x NBA Champion</p>`
+        } else if (finalScore >= 8 && finalScore <= 10) {
+            results.innerHTML = `
+            <h1>You are Michael Jordan!</h1>
+            <p>6x NBA Champion</p>`
+        }
 
         //another if statement for multiple choices.
     }
