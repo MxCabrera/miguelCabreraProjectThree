@@ -420,11 +420,25 @@ button.previous {
   margin: 0;
 }
 
-.restart {
+.resultBox {
+  width: 65%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+button.restart {
+  font-size: 2rem;
   color: #000;
   background-color: green;
   border-radius: 10px;
   margin-top: 2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.restart:hover {
+  color: #FFF;
 }
 
 .copyright {

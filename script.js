@@ -84,6 +84,8 @@ function nextQuestion(){
         alert(`If you dont answer, you will be benched!`);
         return;
     }
+
+    // i dont get how nextElementSibling works like that? shouldnt userChoice just be fine?
     const answerScore = Number(userChoice.nextElementSibling.getAttribute('data-total'));
 
     score.push(answerScore);
@@ -101,12 +103,20 @@ function nextQuestion(){
     if (mainQuestion == totalQuestions) {
         if (finalScore >= 5 && finalScore <= 7) {
             results.innerHTML = `
+            <div class="resultBox">
+            <img src="./assets/leBronJames.jpg" alt="">
             <h1>You are Lebron James!</h1>
-            <p>3x NBA Champion</p>`
+            <p>3x NBA Champion</p>
+            </div>
+            <button class="restart"> Restart </button>`
         } else if (finalScore >= 8 && finalScore <= 10) {
             results.innerHTML = `
+            <div class="resultBox">
+            <img src="./assets/michaelJordan.jpg" alt="">
             <h1>You are Michael Jordan!</h1>
-            <p>6x NBA Champion</p>`
+            <p>6x NBA Champion</p>
+            </div>
+            <button class="restart"> Restart </button>`
         }
 
         //another if statement for multiple choices.
