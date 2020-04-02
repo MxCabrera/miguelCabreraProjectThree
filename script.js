@@ -39,10 +39,8 @@ const questions = [
 
 let score = [];
 let mainQuestion = 0;
-let michaelJordan = 0;
-let leBronJames = 0;
-let chosenAnswersInfo = []
-const totalQuestions = questions.length // array?? 
+let chosenAnswersInfo = [];
+const totalQuestions = questions.length;
 
 // ..connection the html elements to script
 const startQuiz = document.getElementById('titleButton');
@@ -81,11 +79,14 @@ function createQuestions(index){
 //.. move on to the next question when next button clicked
 function nextQuestion(){
     let userChoice = document.querySelector('input[type="radio"]:checked');
-
+    
+    if (!userChoice) {
+        alert(`If you dont answer, you will be benched!`);
+        return;
+    }
     const answerScore = Number(userChoice.nextElementSibling.getAttribute('data-total'));
 
     score.push(answerScore);
-
     chosenAnswersInfo.push()
 
     const finalScore = score.reduce((total, currentNum) => total + currentNum);
