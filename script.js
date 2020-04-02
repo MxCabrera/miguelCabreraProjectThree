@@ -20,6 +20,18 @@ const questions = [
         "answer1Total": "1",
         "answer2": "Deep Red",
         "answer2Total": "2"
+    }, {
+        "question": "10 seconds on the clock, what are you doing?",
+        "answer1": "Making the Game Winning Play",
+        "answer1Total": "1",
+        "answer2": "Shooting the Game Winning shot",
+        "answer2Total": "2"
+    }, {
+        "question": "You just got the game winning shot, how do you celebrate?",
+        "answer1": "Beat your chest",
+        "answer1Total": "1",
+        "answer2": "Stick your tongue out",
+        "answer2Total": "2"
     }
 
 ];
@@ -33,6 +45,7 @@ let chosenAnswersInfo = []
 const totalQuestions = questions.length // array?? 
 
 // ..connection the html elements to script
+const startQuiz = document.getElementById('titleButton');
 const quizBox = document.querySelector('.quizBox');
 // console.log(quizBox)
 const questionMain = document.querySelector('.question');
@@ -69,16 +82,29 @@ function createQuestions(index){
 function nextQuestion(){
     let userChoice = document.querySelector('input[type="radio"]:checked');
 
+    const answerScore = Number(userChoice.nextElementSibling.getAttribute('data-total'));
+
+    score.push(answerScore);
+
+    chosenAnswersInfo.push()
+
+    const finalScore = score.reduce((total, currentNum) => total + currentNum);
+
     mainQuestion++
 
+    userChoice.checked = false;
 
     if (mainQuestion == totalQuestions - 1) {
-        results.innerHTML = `Hello`
+        results.innerHTML = 
+        `
+        <p>Your final score is : ${finalScore}</p>
+        <p>You are Michael Jordan!</p>`
+
+        //another if statement for multiple choices.
     }
 createQuestions(mainQuestion);
 }
 
-createQuestions(mainQuestion);
 // when clicking next, gather value of the selected choice. 
 
 
@@ -89,6 +115,8 @@ createQuestions(mainQuestion);
 // reseting the quiz if user requests
 
 // onclick event listeners
+startQuiz.addEventListener('click', createQuestions)
+createQuestions(mainQuestion);
 nextButton.addEventListener('click', nextQuestion)
 
 console.log(`it works!`);

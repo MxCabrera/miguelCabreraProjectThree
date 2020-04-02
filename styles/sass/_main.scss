@@ -9,10 +9,10 @@ body {
 }
 
 header {
-    height: 94vh;
+    height: 100vh;
     width: 90%;
     margin: 0 auto;
-    background-color: rgba(255,255,255, 0.05);
+    // background-color: rgba(0,0,0, 0.8);
     text-align: center;
 }
 
@@ -46,12 +46,13 @@ header {
     background-color: rgba(255,255,255,0.4);
     font-size: 2.5rem;
     border-radius: 10px;
+    // margin-bottom: 3rem;
 }
 
 .quizBox {
     width: 60%;
     min-height: 80vh;
-    margin: 5rem auto;
+    margin: 8rem auto;
     padding: 3rem;
     background: $color-three;
     display: flex; 
@@ -147,4 +148,5 @@ button.previous {
     background-color: $color-four;
     color: $color-three;
     letter-spacing: 1.5px;
+    padding: 0.5rem 0;
 }
