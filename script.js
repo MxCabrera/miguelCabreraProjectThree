@@ -37,7 +37,11 @@ const previousButton = document.querySelector('.previous');
 
 //.. create a question when user enters the DOM
 function createQuestions(index){
+    const question = question[index];
+    const choice1Total = question[index].answer1Total;
+    const choice2Total = question[index].answer2Total;
 
+    questionMain.innerHTML = `${question[index]} : ${question.question}`
 }
 
 
@@ -59,32 +63,3 @@ function nextQuestion(){
 
 // onclick event listeners
 
-
-
-// A landing page with the app heading "Which G.O.A.T. Are You? (Greatest of all time)" and a button that states "click to start"
-
-// A button that directs them to the start of the quiz. 
-
-// Listen to that button click event to scroll to the quiz form section
-
-// A radio form that gives you two options to decide from.
-
-// When radio selection has been checks, click the next button
-
-// Listen to the button click event to move on to the next question below.
-
-// When all of the questions have been answered, click the finish button. 
-
-// Listen to the button click event to complete the quiz
-
-// gather the values of each selected choice from each question and create a total amount.
-
-// store the total amount in a variable
-
-// When quiz is completed return total value score 
-
-// If score is equal to option A, return option A information to DOM, else if total score is equal to option B, return option B information to DOM.
-
-// if no choice has been selected, alert user to choose one.
-
-// Listen to button click event, Once results have been returned to the user, display restart button to reset the quiz.
