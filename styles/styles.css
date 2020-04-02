@@ -240,16 +240,23 @@ body {
   font-weight: 100;
   margin: 0;
   padding: 0;
-  background-image: url(../assets/pic2.jpg);
   background-size: contain;
   background-repeat: repeat-y;
+  background-color: #000;
 }
 
-header {
+.wrapper {
   height: 100vh;
+  max-width: 1800px;
   width: 90%;
   margin: 0 auto;
+  background-image: url(../assets/pic2.jpg);
+  background-position: center;
   text-align: center;
+}
+
+.quizWrapper {
+  padding-top: 4rem;
 }
 
 .flex {
@@ -270,31 +277,35 @@ header {
   margin-top: 3rem;
   margin-bottom: 0;
   font-weight: 300;
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .goatAcronym {
   font-size: 3rem;
   color: #FFF;
+  margin-bottom: 0;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .strongGoat {
-  width: 37%;
+  width: 34%;
 }
 
 .titleButton {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.4);
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.9);
   font-size: 2.5rem;
   border-radius: 10px;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 
 .quizBox {
   width: 60%;
   min-height: 80vh;
-  margin: 8rem auto;
+  margin: auto;
   padding: 3rem;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -305,11 +316,12 @@ header {
   text-shadow: 0 1px #000;
   -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
 }
 
 .title {
-  color: #6d6d6d;
-  font-size: 2.5rem;
+  color: #4d4d4d;
+  font-size: 3.5rem;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 3rem;
@@ -318,16 +330,18 @@ header {
 }
 
 .question {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   margin: 2rem auto;
 }
 
 .choice {
+  font-size: 1.5rem;
   width: 80%;
   color: rgba(17, 17, 17, 0.584);
   margin: 0 auto;
   padding: 1rem;
   background: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
 }
 
 .choice input:checked .choice {
@@ -365,6 +379,7 @@ button:focus {
           box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  color: #FFF;
 }
 
 button.next {
@@ -373,6 +388,11 @@ button.next {
 
 button.previous {
   background: #C9082A;
+}
+
+button.next,
+button.previous {
+  border-radius: 5px;
 }
 
 .results {
@@ -397,6 +417,13 @@ button.previous {
 
 .results h2 {
   margin: 0;
+}
+
+.restart {
+  color: #000;
+  background-color: green;
+  border-radius: 10px;
+  margin-top: 2rem;
 }
 
 .copyright {

@@ -10,45 +10,47 @@
     <title>Which G.O.A.T. Are You?</title>
 </head>
 <body>
-    <header class="header">
+    <header class="wrapper">
         <div class="flex">
             <h1 class="mainTitle">Which G.O.A.T Are You?</h1>
             <h2 class="goatAcronym">(Greatest Of All Time)</h2>
             <img class="strongGoat" src="./assets/pic10.jpg" alt="">
             <div class="playerPics">
-                <img src="" alt="Michael Jordan">
-                <img src="" alt="LeBron James">
+                <!-- <img src="" alt="Michael Jordan"> -->
+                <!-- <img src="" alt="LeBron James"> -->
             </div>
-            <button class="titleButton" id="titleButton">Click here to Start!</button>
+            <button class="titleButton" id="titleButton">Start Quiz</button>
         </div>
     </header>
 
-    <main class="quizBox">
-        <div class="title">Which G.O.A.T. Are You?</div>
-        <div class="question" id="question">question 1: Favourite Food?</div>
-        <!-- <form action="submit"> -->
-            <label for="quiz" class="choice">
-                <input type="radio" name="choice" value="1">
-                <span class="choice1">Tacos</span>
-            </label>
-            <label for="quiz" class="choice">
-                <input type="radio" name="choice" value="2">
-                <span class="choice2">Steak</span>
-            </label>
-        <!-- </form> -->
+    <main class="wrapper quizWrapper">
+        <div class="quizBox">
+            <div class="title">Choose Your Destiny!</div>
+            <div class="question" id="question">question 1: Favourite Food?</div>
+            <!-- <form action="submit"> -->
+                <label for="quiz" class="choice">
+                    <input type="radio" name="choice" value="1">
+                    <span class="choice1">Tacos</span>
+                </label>
+                <label for="quiz" class="choice">
+                    <input type="radio" name="choice" value="2">
+                    <span class="choice2">Steak</span>
+                </label>
+            <!-- </form> -->
 
-
-        <div class="mainButtons">
-            <button class="previous">Previous</button>
-            <button class="next">Next</button>
+            <aside class="mainButtons">
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+            </aside>
         </div>
     </main>
-
-    <section class="results">
-        <h2>Heres your Results:</h2>
-        <button class="restart">Restart</button>
+    
+    <section class="wrapper">
+        <div class="results">
+            <h2>Heres your Results:</h2>
+            <button class="restart">Restart</button>
+        </div>
     </section>
-
 
     <footer>
         <div class="copyright">
