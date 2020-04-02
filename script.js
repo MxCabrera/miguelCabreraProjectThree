@@ -1,16 +1,27 @@
-console.log(`it works!`);
-
 
 
 // questions in an array 
 const questions = [
     {
-        question: 'What is your favourite food?',
-        answer1: 'Tacos',
-        answer1Total: '1',
-        answer2: 'Steak',
-        answer2Total: '2'
+        "question": "What is your favourite food?",
+        "answer1": "Tacos",
+        "answer1Total": "1",
+        "answer2": "Steak",
+        "answer2Total": "2"
+    }, {
+        "question": "What is your favourite shoes?",
+        "answer1": "Nike",
+        "answer1Total": "1",
+        "answer2": "Air Jordans",
+        "answer2Total": "2"
+    }, {
+        "question": "What is your favourite color?",
+        "answer1": "Navy Blue",
+        "answer1Total": "1",
+        "answer2": "Deep Red",
+        "answer2Total": "2"
     }
+
 ];
 // console.log(questions.answer1)
 
@@ -18,7 +29,7 @@ let score = [];
 let mainQuestion = 0;
 let michaelJordan = 0;
 let leBronJames = 0;
-let chosenAnswerData = []
+let chosenAnswersInfo = []
 const totalQuestions = questions.length // array?? 
 
 // ..connection the html elements to script
@@ -34,32 +45,50 @@ const nextButton = document.querySelector('.next');
 // console.log(nextButton);
 const previousButton = document.querySelector('.previous');
 // console.log(previousButton);
+const results = document.querySelector('.results');
+console.log(results);
 
 //.. create a question when user enters the DOM
 function createQuestions(index){
-    const question = question[index];
-    const choice1Total = question[index].answer1Total;
-    const choice2Total = question[index].answer2Total;
+    const question = questions[index];
+    const choice1Total = questions[index].answer1Total;
+    const choice2Total = questions[index].answer2Total;
 
-    questionMain.innerHTML = `${question[index]} : ${question.question}`
+    questionMain.innerHTML = `${index + 1}. ${question.question}`
+    
+    choice1.setAttribute('data-total', `${choice1Total}`);
+    choice2.setAttribute('data-total', `${choice2Total}`);
+
+    choice1.innerHTML = `${question.answer1}`
+    choice2.innerHTML = `${question.answer2}`
+
+    // use the value of answer.......
 }
-
 
 //.. move on to the next question when next button clicked
 function nextQuestion(){
+    let userChoice = document.querySelector('input[type="radio"]:checked');
 
+    mainQuestion++
+
+
+    if (mainQuestion == totalQuestions - 1) {
+        results.innerHTML = `Hello`
+    }
+createQuestions(mainQuestion);
 }
 
+createQuestions(mainQuestion);
 // when clicking next, gather value of the selected choice. 
 
 
 // add answer to total score
 
 
-//move on to the next question 
-
 
 // reseting the quiz if user requests
 
 // onclick event listeners
+nextButton.addEventListener('click', nextQuestion)
 
+console.log(`it works!`);

@@ -333,7 +333,7 @@ header {
 
 .choice input:checked .choice {
   color: #000;
-  background: #17408B;
+  background-color: #17408B;
 }
 
 .choice:hover {
