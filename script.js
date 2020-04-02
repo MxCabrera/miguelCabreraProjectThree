@@ -43,21 +43,26 @@ let chosenAnswersInfo = [];
 const totalQuestions = questions.length;
 
 // ..connection the html elements to script
+const header = document.querySelector('header');
 const startQuiz = document.getElementById('titleButton');
+const quiz = document.querySelector('.quizWrapper');
 const quizBox = document.querySelector('.quizBox');
-// console.log(quizBox)
 const questionMain = document.querySelector('.question');
-// console.log(questionMain);
 const choice1 = document.querySelector('.choice1');
-// console.log(choice1);
 const choice2 = document.querySelector('.choice2');
-// console.log(choice2);
 const nextButton = document.querySelector('.next');
-// console.log(nextButton);
 const previousButton = document.querySelector('.previous');
-// console.log(previousButton);
 const results = document.querySelector('.results');
 console.log(results);
+
+
+function beginQuiz() {
+    if (startQuiz) {
+        header.style.display = 'none';
+        quiz.style.display = 'block';
+    }
+}
+
 
 //.. create a question when user enters the DOM
 function createQuestions(index){
@@ -130,12 +135,11 @@ createQuestions(mainQuestion);
 // add answer to total score
 
 
-
 // reseting the quiz if user requests
 
 // onclick event listeners
-startQuiz.addEventListener('click', createQuestions)
 createQuestions(mainQuestion);
+startQuiz.addEventListener('click', beginQuiz)
 nextButton.addEventListener('click', nextQuestion)
 
-console.log(`it works!`);
+// console.log(`it works!`);
