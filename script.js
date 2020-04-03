@@ -33,7 +33,6 @@ const questions = [
         "answer2": "Stick your tongue out",
         "answer2Total": "2"
     }
-
 ];
 // console.log(questions.answer1)
 
@@ -55,7 +54,7 @@ const previousButton = document.querySelector('.previous');
 const results = document.querySelector('.results');
 console.log(results);
 
-
+// when user clicks the start quiz button
 function beginQuiz() {
     if (startQuiz) {
         header.style.display = 'none';
@@ -102,23 +101,55 @@ function nextQuestion(){
 
     userChoice.checked = false;
 
-    
+    if (mainQuestion == totalQuestions - 1) {
+        nextButton.textContent = 'Finish';
+    }
 
 
     if (mainQuestion == totalQuestions) {
+        // header.style.display = 'block';
+        quiz.style.display = 'none';
+
+        // const pName = null;
+        // const pImage = null ;
+        // const pInfo = null;
+        // if (finalScore >= 5 && finalScore <= 7) {
+        //     pName = `Michael Jordan`;
+        //     pImage = `<img src="./assets/michaelJordan.jpg" alt="michael jordan">`;
+        //     pInfo = `6x NBA Champion`
+        // } else if (finalScore >= 8 && finalScore <= 10) {
+        //     pName = `LeBron James`;
+        //     pImage = `<img src="./assets/leBronJames.jpg" alt="lebron james">`;
+        //     pInfo = `3x NBA Champion`
+        //     // return;
+        // }
+
+        // results.innerHTML = `
+        // <div class="resultBox">
+        // ${image}
+        // <h1>You are ${name}!</h1>
+        // <p>${info}</p>
+        // </div>
+        // <button class="restart"> Restart </button>
+        // `;
+
+
+
         if (finalScore >= 5 && finalScore <= 7) {
             results.innerHTML = `
+            <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
             <img src="./assets/leBronJames.jpg" alt="">
-            <h1>You are Lebron James!</h1>
+            <h2>You are Lebron James!</h2>
             <p>3x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
         } else if (finalScore >= 8 && finalScore <= 10) {
             results.innerHTML = `
+            <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
             <img src="./assets/michaelJordan.jpg" alt="">
-            <h1>You are Michael Jordan!</h1>
+            <h2>You are Michael Jordan!</h2>
             <p>6x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
@@ -126,6 +157,7 @@ function nextQuestion(){
 
         //another if statement for multiple choices.
     }
+
 createQuestions(mainQuestion);
 }
 
@@ -136,10 +168,22 @@ createQuestions(mainQuestion);
 
 
 // reseting the quiz if user requests
+function resetQuiz(e){
+    if (e.target.matches('button')){
+        mainQuestion = 0;
+        score = [];
+
+        location.reload();
+    }
+}
+
+
+
 
 // onclick event listeners
 createQuestions(mainQuestion);
-startQuiz.addEventListener('click', beginQuiz)
+results.addEventListener('click', resetQuiz);
 nextButton.addEventListener('click', nextQuestion)
+startQuiz.addEventListener('click', beginQuiz)
 
 // console.log(`it works!`);
