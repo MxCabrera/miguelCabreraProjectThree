@@ -9,7 +9,9 @@ const questions = [
         "answer2": "Steak",
         "answer2Total": "2",
         "answer3": "Fish",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "Shrimp",
+        "answer4Total": "4"
     }, {
         "question": "What is your favourite shoes?",
         "answer1": "Nike",
@@ -17,7 +19,9 @@ const questions = [
         "answer2": "Air Jordans",
         "answer2Total": "2",
         "answer3": "Converse",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "Adidas",
+        "answer4Total": "4"
     }, {
         "question": "What is your favourite color?",
         "answer1": "Navy Blue",
@@ -25,7 +29,9 @@ const questions = [
         "answer2": "Deep Red",
         "answer2Total": "2",
         "answer3": "Yellow",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "Grey",
+        "answer4Total": "4"
     }, {
         "question": "10 seconds on the clock, what are you doing?",
         "answer1": "Making the Game Winning Play",
@@ -33,7 +39,9 @@ const questions = [
         "answer2": "Shooting the Game Winning shot",
         "answer2Total": "2",
         "answer3": "Passing an alley-oop to win the game ",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "Dribbling ball for easy backboard shot",
+        "answer4Total": "4"
     }, {
         "question": "You just got the game winning shot, how do you celebrate?",
         "answer1": "Beat your chest, angrily",
@@ -41,8 +49,41 @@ const questions = [
         "answer2": "Stick your tongue out, with emphasis",
         "answer2Total": "2",
         "answer3": "Raising a hand up, running down the court",
-        "answer3Total": "3"
+        "answer3Total": "3",
+        "answer4": "Remain silent, being humble",
+        "answer4Total": "4"
     }
+    //, {
+    //     "question": "On your day off, what do you like to do?",
+    //     "answer1": "Workout and exercise",
+    //     "answer1Total": "2",
+    //     "answer2": "Play relaxing sports",
+    //     "answer2Total": "1",
+    //     "answer3": "Watch Tv",
+    //     "answer3Total": "3",
+    //     "answer4": "Board Games",
+    //     "answer4Total": "4"
+    // }, {
+    //     "question": "Pick A City",
+    //     "answer1": "Cleveland",
+    //     "answer1Total": "2",
+    //     "answer2": "Chicago",
+    //     "answer2Total": "1",
+    //     "answer3": "Los Angeles",
+    //     "answer3Total": "3",
+    //     "answer4": "San Antonio",
+    //     "answer4Total": "4"
+    // }, {
+    //     "question": "What are you afraid of?",
+    //     "answer1": "Failure",
+    //     "answer1Total": "2",
+    //     "answer2": "Water",
+    //     "answer2Total": "1",
+    //     "answer3": "Bacteria",
+    //     "answer3Total": "3",
+    //     "answer4": "Sharks",
+    //     "answer4Total": "4"
+    // }
 ];
 // console.log(questions.answer1)
 
@@ -60,6 +101,7 @@ const questionMain = document.querySelector('.question');
 const choice1 = document.querySelector('.choice1');
 const choice2 = document.querySelector('.choice2');
 const choice3 = document.querySelector('.choice3');
+const choice4 = document.querySelector('.choice4');
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const results = document.querySelector('.results');
@@ -80,16 +122,19 @@ function createQuestions(index){
     const choice1Total = questions[index].answer1Total;
     const choice2Total = questions[index].answer2Total;
     const choice3Total = questions[index].answer3Total;
+    const choice4Total = questions[index].answer4Total;
 
     questionMain.innerHTML = `${index + 1}. ${question.question}`
     
     choice1.setAttribute('data-total', `${choice1Total}`);
     choice2.setAttribute('data-total', `${choice2Total}`);
     choice3.setAttribute('data-total', `${choice3Total}`);
+    choice4.setAttribute('data-total', `${choice4Total}`);
 
     choice1.innerHTML = `${question.answer1}`
     choice2.innerHTML = `${question.answer2}`
     choice3.innerHTML = `${question.answer3}`
+    choice4.innerHTML = `${question.answer4}`
 
     // use the value of answer.......
 }
@@ -149,30 +194,39 @@ function nextQuestion(){
 
 
 
-        if (finalScore >= 5 && finalScore <= 8) {
+        if (finalScore >= 5 && finalScore <= 9) {
             results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
-            <img src="./assets/leBronJames.jpg" alt="">
+            <img src="./assets/leBronJames.jpg" alt="Lebron James">
             <h2>You are Lebron James!</h2>
             <p>3x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
-        } else if (finalScore >= 9 && finalScore <= 11) {
+        } else if (finalScore >= 10 && finalScore <= 13) {
             results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
-            <img src="./assets/michaelJordan.jpg" alt="">
+            <img src="./assets/michaelJordan.jpg" alt="Michael Jordan">
             <h2>You are Michael Jordan!</h2>
             <p>6x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
-        } else if (finalScore >= 12 && finalScore <=15){
+        } else if (finalScore >= 14 && finalScore <= 16){
             results.innerHTML = `
             <h1 class="magicHeader"> Your Score: ${finalScore}</h1>
             <div class="resultBox">
-            <img class="magic" src="./assets/magicJohnson.jpg" alt="">
+            <img class="magic" src="./assets/magicJohnson2.jpeg" alt="Magic Johnson">
             <h2>You are Magic Johnson!</h2>
+            <p>5x NBA Champion</p>
+            </div>
+            <button class="restart"> Restart </button>`
+        } else if (finalScore >= 17 && finalScore <= 20) {
+            results.innerHTML = `
+            <h1> Your Score: ${finalScore}</h1>
+            <div class="resultBox">
+            <img class="timothy" src="./assets/timDuncan.jpg" alt="Tim Duncan">
+            <h2>You are Tim Duncan!</h2>
             <p>5x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
@@ -200,12 +254,19 @@ function resetQuiz(e){
 }
 
 
+function previousQuestion() {
+    mainQuestion--;
+    score.pop()
+    createQuestions(mainQuestion);
+}
+
 
 
 // onclick event listeners
-createQuestions(mainQuestion);
 results.addEventListener('click', resetQuiz);
-nextButton.addEventListener('click', nextQuestion)
-startQuiz.addEventListener('click', beginQuiz)
+previousButton.addEventListener('click', previousQuestion);
+nextButton.addEventListener('click', nextQuestion);
+startQuiz.addEventListener('click', beginQuiz);
+createQuestions(mainQuestion);
 
 // console.log(`it works!`);

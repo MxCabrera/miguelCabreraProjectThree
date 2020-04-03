@@ -295,7 +295,7 @@ body {
 .titleButton {
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.9);
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   border-radius: 10px;
   padding: 1rem;
   text-transform: uppercase;
@@ -395,14 +395,20 @@ button.previous {
 button.next,
 button.previous {
   border-radius: 5px;
+  font-size: 1.5rem;
+  margin-top: 3rem;
 }
 
 .magic {
-  width: 50%;
+  width: 70%;
 }
 
 .magicHeader {
   margin: 0;
+}
+
+.timothy {
+  width: 70%;
 }
 
 .results {
@@ -428,6 +434,7 @@ button.previous {
 .results h1,
 .results h2 {
   text-shadow: 2px 2px 2px #fff;
+  font-size: 3rem;
 }
 
 .results h2 {
