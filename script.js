@@ -7,31 +7,41 @@ const questions = [
         "answer1": "Tacos",
         "answer1Total": "1",
         "answer2": "Steak",
-        "answer2Total": "2"
+        "answer2Total": "2",
+        "answer3": "Fish",
+        "answer3Total": "3"
     }, {
         "question": "What is your favourite shoes?",
         "answer1": "Nike",
         "answer1Total": "1",
         "answer2": "Air Jordans",
-        "answer2Total": "2"
+        "answer2Total": "2",
+        "answer3": "Converse",
+        "answer3Total": "3"
     }, {
         "question": "What is your favourite color?",
         "answer1": "Navy Blue",
         "answer1Total": "1",
         "answer2": "Deep Red",
-        "answer2Total": "2"
+        "answer2Total": "2",
+        "answer3": "Yellow",
+        "answer3Total": "3"
     }, {
         "question": "10 seconds on the clock, what are you doing?",
         "answer1": "Making the Game Winning Play",
         "answer1Total": "1",
         "answer2": "Shooting the Game Winning shot",
-        "answer2Total": "2"
+        "answer2Total": "2",
+        "answer3": "Passing an alley-oop to win the game ",
+        "answer3Total": "3"
     }, {
         "question": "You just got the game winning shot, how do you celebrate?",
-        "answer1": "Beat your chest",
+        "answer1": "Beat your chest, angrily",
         "answer1Total": "1",
-        "answer2": "Stick your tongue out",
-        "answer2Total": "2"
+        "answer2": "Stick your tongue out, with emphasis",
+        "answer2Total": "2",
+        "answer3": "Raising a hand up, running down the court",
+        "answer3Total": "3"
     }
 ];
 // console.log(questions.answer1)
@@ -49,6 +59,7 @@ const quizBox = document.querySelector('.quizBox');
 const questionMain = document.querySelector('.question');
 const choice1 = document.querySelector('.choice1');
 const choice2 = document.querySelector('.choice2');
+const choice3 = document.querySelector('.choice3');
 const nextButton = document.querySelector('.next');
 const previousButton = document.querySelector('.previous');
 const results = document.querySelector('.results');
@@ -68,14 +79,17 @@ function createQuestions(index){
     const question = questions[index];
     const choice1Total = questions[index].answer1Total;
     const choice2Total = questions[index].answer2Total;
+    const choice3Total = questions[index].answer3Total;
 
     questionMain.innerHTML = `${index + 1}. ${question.question}`
     
     choice1.setAttribute('data-total', `${choice1Total}`);
     choice2.setAttribute('data-total', `${choice2Total}`);
+    choice3.setAttribute('data-total', `${choice3Total}`);
 
     choice1.innerHTML = `${question.answer1}`
     choice2.innerHTML = `${question.answer2}`
+    choice3.innerHTML = `${question.answer3}`
 
     // use the value of answer.......
 }
@@ -135,7 +149,7 @@ function nextQuestion(){
 
 
 
-        if (finalScore >= 5 && finalScore <= 7) {
+        if (finalScore >= 5 && finalScore <= 8) {
             results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
@@ -144,7 +158,7 @@ function nextQuestion(){
             <p>3x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
-        } else if (finalScore >= 8 && finalScore <= 10) {
+        } else if (finalScore >= 9 && finalScore <= 11) {
             results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
@@ -153,8 +167,16 @@ function nextQuestion(){
             <p>6x NBA Champion</p>
             </div>
             <button class="restart"> Restart </button>`
+        } else if (finalScore >= 12 && finalScore <=15){
+            results.innerHTML = `
+            <h1 class="magicHeader"> Your Score: ${finalScore}</h1>
+            <div class="resultBox">
+            <img class="magic" src="./assets/magicJohnson.jpg" alt="">
+            <h2>You are Magic Johnson!</h2>
+            <p>5x NBA Champion</p>
+            </div>
+            <button class="restart"> Restart </button>`
         }
-
         //another if statement for multiple choices.
     }
 
