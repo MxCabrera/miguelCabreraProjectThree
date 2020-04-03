@@ -81,7 +81,7 @@ const questions = [
     //     "answer2Total": "1",
     //     "answer3": "Bacteria",
     //     "answer3Total": "3",
-    //     "answer4": "Sharks",
+    //     "answer4": "Heights",
     //     "answer4Total": "4"
     // }
 ];

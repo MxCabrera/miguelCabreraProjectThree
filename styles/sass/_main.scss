@@ -33,6 +33,11 @@ body {
     position: center;
 }
 
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
 .mainTitle {
     text-align: center;
     font-size: 7rem;
@@ -51,7 +56,47 @@ body {
 }
 
 .strongGoat {
-    width: 34%;
+    width: 40%;
+}
+
+.lebron,
+.jordan {
+    width: 35%;
+    height: 65%;
+    position: center;
+}
+
+.rotates {
+    animation: rotations 2.5s infinite linear;
+}
+
+@keyframes rotations {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(5deg);
+  }
+}
+
+.rotate {
+    animation: rotation 2.5s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.playersPic {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
 }
 
 .titleButton {
