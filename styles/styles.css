@@ -486,8 +486,14 @@ button.previous {
   margin-top: 3rem;
 }
 
+.lebronJ,
+.mJordan {
+  width: 40%;
+  height: 40%;
+}
+
 .magic {
-  width: 70%;
+  width: 60%;
 }
 
 .magicHeader {
@@ -495,13 +501,13 @@ button.previous {
 }
 
 .timothy {
-  width: 70%;
+  width: 40%;
 }
 
 .results {
   font-size: 2.5rem;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,10 +528,21 @@ button.previous {
 .results h2 {
   text-shadow: 2px 2px 2px #fff;
   font-size: 3rem;
+  margin: 0;
 }
 
 .results h2 {
-  margin: 0;
+  font-size: 2.3rem;
+}
+
+.results h3 {
+  font-size: 2rem;
+  margin: 0.7rem;
+}
+
+.results p {
+  margin: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .resultBox {
@@ -545,7 +562,7 @@ button.restart {
   color: #000;
   background-color: green;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -560,4 +577,28 @@ button.restart:hover {
   color: #FFF;
   letter-spacing: 1.5px;
   padding: 0.5rem 0;
+}
+
+@media (max-width: 1600px) {
+  body {
+    background: blue;
+  }
+}
+
+@media (max-width: 1400px) {
+  body {
+    background: red;
+  }
+}
+
+@media (max-width: 1200px) {
+  body {
+    background: green;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    background: yellow;
+  }
 }
