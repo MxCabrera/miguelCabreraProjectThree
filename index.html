@@ -21,7 +21,7 @@
                 <img class="jordan shakes" src="./assets/pic7.png" alt="Michael Jordan">
             </div>
             </div>
-            <button class="titleButton" id="titleButton">Start Quiz</button>
+            <button class="titleButton" id="titleButton">Let's Begin</button>
         </div>
     </header>
 
@@ -29,24 +29,24 @@
         <div class="quizBox">
             <div class="title">Choose Your Destiny!</div>
             <div class="question" id="question">question 1: Favourite Food?</div>
-            <!-- <form action="submit"> -->
-                <label class="choice" for="quiz">
-                    <input type="radio" name="choice" value="1">
-                    <span class="choice1">Tacos</span>
-                </label>
-                <label for="quiz" class="choice">
-                    <input type="radio" name="choice" value="2">
-                    <span class="choice2">Steak</span>
-                </label>
-                <label for="quiz" class="choice">
-                    <input type="radio" name="choice" value="3">
-                    <span class="choice3">Fish</span>
-                </label>
-                <label for="quiz" class="choice">
-                    <input type="radio" name="choice" value="4">
-                    <span class="choice4">Fish</span>
-                </label>
-            <!-- </form> -->
+            <form action="submit">
+            <div class="choice checkbox" for="quiz">
+                <input type="radio" name="choice" value="1" for="quiz">
+                <label class="choice1" for="nbaQuiz">Tacos</label>
+            </div>
+            <div for="quiz" class="choice">
+                <input type="radio" name="choice" value="2" for="quiz">
+                <label class="choice2" for="nbaQuiz">Steak</label>
+            </div>
+            <div for="quiz" class="choice">
+                <input type="radio" name="choice" value="3" for="quiz">
+                <label class="choice3" for="nbaQuiz">Fish</label>
+            </div>
+            <div for="quiz" class="choice">
+                <input type="radio" name="choice" value="4" for="quiz">
+                <label class="choice4" for="nbaQuiz">Shrimp</label>
+            </div>
+            </form>
 
             <aside class="mainButtons">
                 <button class="previous">Previous</button>
@@ -59,11 +59,13 @@
         <div class="results">
             <h2>Scoring System</h2>
             <div class="resultBox1">
-                <p>If you scored:</p>
-                <p><u class="grey">5-8 Points</u> : Michael Jordan</p>
-                <p><u class="grey">9-12 Points</u> : LeBron James</p>
-                <p><u class="grey">13-16 Points</u> : Magic Johnson</p>
-                <p><u class="grey">17-20 Points</u> : Tim Duncan</p>
+                <div class="initialText">
+                    <p>If you score:</p>
+                    <p><u class="grey">5-8 Points</u> : Michael Jordan</p>
+                    <p><u class="grey">9-12 Points</u> : LeBron James</p>
+                    <p><u class="grey">13-16 Points</u> : Magic Johnson</p>
+                    <p><u class="grey">17-20 Points</u> : Tim Duncan</p>
+                </div>
             </div>
         </div>
     </section>
@@ -71,6 +73,7 @@
     <footer>
         <div class="copyright">
             <p><i class="far fa-copyright"></i> Miguel Cabrera Design. All Rights Reserved.</p>
+            <span class="credit"><i class="far fa-copyright"></i> Photo by (Michael Tipton)</span>
         </div>
     </footer>
 

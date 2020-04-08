@@ -112,7 +112,7 @@ const questions = [
         awards: `6x NBA Champion | 14x AllStar | 5x MVP | Rookie of the Year | 6x Finals MVP | 10x Scoring Champ | 3x Steals Champ | 11x Defensive 1st Team`,
         info: 'You are a born winner. One of the fiercest competitors with an intimidating demeanor. Your tenacious attitude, will-power, and consistent hard work breeds success at an incredibly high rate. Failure is not in your vocabulary. Your name will be known, and people will be inspired to follow your path.',
         stats: {
-            points: 30.0,
+            points: 30.1,
             rebounds: 6.2,
             assists: 5.3,
             steals: 2.3,
@@ -232,7 +232,7 @@ function createQuestions(index){
 
 //.. move on to the next question when next button clicked
 function nextQuestion(){
-    let userChoice = document.querySelector('input[type="radio"]:checked');
+    let userChoice = document.querySelector('div input[type="radio"]:checked');
     
     if (!userChoice) {
         alert(`If you dont answer, you will be benched!`);

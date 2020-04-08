@@ -204,7 +204,7 @@ body {
     // transition: all 0.35s;
 }
 
-.choice input:checked {
+.quizBox div input[type="radio"]:checked {
     color: #000;
     background-color: #17408B;
 }
@@ -252,6 +252,10 @@ button.previous {
     border-radius: 5px;
     font-size: 1.5rem;
     margin-top: 3rem;
+}
+
+.results .initialText p{
+    font-size: 2.5rem;
 }
 
 .lebronJ,
@@ -307,6 +311,10 @@ button.previous {
     color: rgb(99, 97, 97);
 }
 
+// .results {
+//     position: relative;
+// }
+
 .results h1,
 .results h2,
 .results h3 {
@@ -361,10 +369,21 @@ button.restart:hover {
     color: $color-three;
 }
 
+.credit {
+    color: $color-three;
+    width: 100%;
+    text-align: right;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -40px;
+    right: 80px;
+}
+
 .copyright {
     text-align: center;
     background-color: $color-four;
     color: $color-three;
     letter-spacing: 1.5px;
     padding: 0.5rem 0;
+    position: relative;
 }

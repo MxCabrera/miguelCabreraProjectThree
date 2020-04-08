@@ -10,6 +10,13 @@
 @media (max-width: 1200px) {
     body {
         background: green;
+
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .question {
+        font-size: 2rem;
     }
 }
 
@@ -17,20 +24,44 @@
     body {
         background: yellow;
     }
+    .quizBox,
+    .resultBox1,
+    .resultBox {
+        width: 70%;
+    }
 }
 
-// @media (max-width: 900px) {
-    
-// }
+@media (max-width: 900px) {
+    body {
+        background: purple;
+    }
+}
 
-// @media (max-width: 768px) {
-    
-// }
+@media (max-width: 768px) {
+    body {
+        background: orange;
+    }
+    .quizBox,
+    .resultBox1,
+    .resultBox {
+        width: 75%;
+    }
 
-// @media (max-width: 500px) {
-    
-// }
+}
 
-// @media (max-width: 360px) {
-    
-// }
+@media (max-width: 500px) {
+    body {
+        background: pink;
+    }
+    .quizBox,
+    .resultBox1,
+    .resultBox {
+        width: 90%;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        background: brown;
+    }
+}
