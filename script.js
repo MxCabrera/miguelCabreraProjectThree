@@ -23,37 +23,37 @@ const questions = [
         "answer3Total": "3",
         "answer4": "Adidas",
         "answer4Total": "4"
-    }, {
-        "question": "What is your favourite color?",
-        "answer1": "Navy Blue",
-        "answer1Total": "1",
-        "answer2": "Deep Red",
-        "answer2Total": "2",
-        "answer3": "Yellow",
-        "answer3Total": "3",
-        "answer4": "Grey",
-        "answer4Total": "4"
-    }, {
-        "question": "10 seconds on the clock, what are you doing?",
-        "answer1": "Making the Game Winning Play",
-        "answer1Total": "1",
-        "answer2": "Shooting the Game Winning shot",
-        "answer2Total": "2",
-        "answer3": "Passing an alley-oop to win the game ",
-        "answer3Total": "3",
-        "answer4": "Dribbling ball for easy backboard shot",
-        "answer4Total": "4"
-    }, {
-        "question": "You just got the game winning shot, how do you celebrate?",
-        "answer1": "Beat your chest, angrily",
-        "answer1Total": "1",
-        "answer2": "Stick your tongue out, with emphasis",
-        "answer2Total": "2",
-        "answer3": "Raising a hand up, running down the court",
-        "answer3Total": "3",
-        "answer4": "Remain silent, being humble",
-        "answer4Total": "4"
-    }
+    }//, {
+    //     "question": "What is your favourite color?",
+    //     "answer1": "Navy Blue",
+    //     "answer1Total": "1",
+    //     "answer2": "Deep Red",
+    //     "answer2Total": "2",
+    //     "answer3": "Yellow",
+    //     "answer3Total": "3",
+    //     "answer4": "Grey",
+    //     "answer4Total": "4"
+    // }, {
+    //     "question": "Ten seconds on the clock, what are you doing?",
+    //     "answer1": "Making the Game Winning Play",
+    //     "answer1Total": "1",
+    //     "answer2": "Shooting the Game Winning shot",
+    //     "answer2Total": "2",
+    //     "answer3": "Passing an alley-oop to win the game ",
+    //     "answer3Total": "3",
+    //     "answer4": "Dribbling ball for easy backboard shot",
+    //     "answer4Total": "4"
+    // }, {
+    //     "question": "You just got the game winning shot, how do you celebrate?",
+    //     "answer1": "Beat your chest, angrily",
+    //     "answer1Total": "1",
+    //     "answer2": "Stick your tongue out, with emphasis",
+    //     "answer2Total": "2",
+    //     "answer3": "Raising a hand up, running down the court",
+    //     "answer3Total": "3",
+    //     "answer4": "Remain silent, being humble",
+    //     "answer4Total": "4"
+    // }
     //, {
     //     "question": "On your day off, what do you like to do?",
     //     "answer1": "Workout and exercise",
@@ -268,7 +268,7 @@ function nextQuestion(){
         let pInfo = '';
         let pStats = '';
         //another if statement for multiple choices corresponding to total score
-        if (finalScore >= 5 && finalScore <= 9) {
+        if (finalScore >= 2 && finalScore <= 3) {
             pName = `${playerInfo.james.name}`;
             pImage = `${playerInfo.james.image}`;
             pImageClass = `${playerInfo.james.class}`;
@@ -276,7 +276,7 @@ function nextQuestion(){
             pInfo = `${playerInfo.james.info}`;
             pStats = `Points: ${playerInfo.james.stats.points} | Rebounds: ${playerInfo.james.stats.rebounds} | Assists: ${playerInfo.james.stats.assists} | Steals: ${playerInfo.james.stats.steals} | Blocks: ${playerInfo.james.stats.blocks} | Field Goal: ${playerInfo.james.stats.fieldGoal}%`
 
-        } else if (finalScore >= 10 && finalScore <= 13) {
+        } else if (finalScore >= 4 && finalScore <= 5) {
             pName = `${playerInfo.jordan.name}`;
             pImage = `${playerInfo.jordan.image}`;
             pImageClass = `${playerInfo.jordan.class}`;
@@ -284,7 +284,7 @@ function nextQuestion(){
             pInfo = `${playerInfo.jordan.info}`;
             pStats = `Points: ${playerInfo.jordan.stats.points} | Rebounds: ${playerInfo.jordan.stats.rebounds} | Assists: ${playerInfo.jordan.stats.assists} | Steals: ${playerInfo.jordan.stats.steals} | Blocks: ${playerInfo.jordan.stats.blocks} | Field Goal: ${playerInfo.jordan.stats.fieldGoal}%`
 
-        } else if (finalScore >= 14 && finalScore <= 16){
+        } else if (finalScore >= 6 && finalScore <= 7){
             pName = `${playerInfo.magic.name}`;
             pImage = `${playerInfo.magic.image}`;
             pImageClass = `${playerInfo.magic.class}`;
@@ -292,7 +292,7 @@ function nextQuestion(){
             pInfo = `${playerInfo.magic.info}`;
             pStats = `Points: ${playerInfo.magic.stats.points} | Rebounds: ${playerInfo.magic.stats.rebounds} | Assists: ${playerInfo.magic.stats.assists} | Steals: ${playerInfo.magic.stats.steals} | Blocks: ${playerInfo.magic.stats.blocks} | Field Goal: ${playerInfo.magic.stats.fieldGoal}%`
 
-        } else if (finalScore >= 17 && finalScore <= 20) {
+        } else if (finalScore >= 8 && finalScore <= 9) {
             pName = `${playerInfo.duncan.name}`;
             pImage = `${playerInfo.duncan.image}`;
             pImageClass = `${playerInfo.duncan.class}`;

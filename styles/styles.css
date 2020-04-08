@@ -291,6 +291,11 @@ body {
   text-shadow: 2px 2px 2px #000;
 }
 
+.mainTitle:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .goatAcronym {
   font-size: 3rem;
   color: #FFF;
@@ -544,6 +549,10 @@ body {
   text-transform: uppercase;
 }
 
+.titleButton:hover {
+  background-color: #636161;
+}
+
 .quizBox {
   width: 60%;
   min-height: 80vh;
@@ -648,12 +657,8 @@ button.previous {
   height: 40%;
 }
 
-.lebronJ:hover {
-  background-image: url(/assets/pic6.jpg);
-}
-
 .magic {
-  width: 60%;
+  width: 50%;
 }
 
 .magicHeader {
@@ -662,6 +667,24 @@ button.previous {
 
 .timothy {
   width: 40%;
+}
+
+.scoring h2 {
+  font-size: 3rem;
+  padding-top: 2rem;
+  text-shadow: 2px 2px 2px #fff;
+}
+
+.resultBox1 {
+  padding: 1rem;
+  width: 65%;
+  margin: 1rem auto;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+.resultBox1 p {
+  font-size: 2rem;
 }
 
 .results {
@@ -684,11 +707,15 @@ button.previous {
   text-align: center;
 }
 
+.grey {
+  color: #636161;
+}
+
 .results h1,
 .results h2,
 .results h3 {
   text-shadow: 2px 2px 2px #fff;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -708,7 +735,7 @@ button.previous {
 
 .resultBox {
   width: 65%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
 }
@@ -718,9 +745,10 @@ button.previous {
 }
 
 .highlight {
-  color: #702929;
+  color: #8f0707;
   font-size: 2rem;
   text-shadow: 1px 1px 1px #000;
+  letter-spacing: 1.2px;
 }
 
 button.restart {
@@ -743,12 +771,6 @@ button.restart:hover {
   color: #FFF;
   letter-spacing: 1.5px;
   padding: 0.5rem 0;
-}
-
-@media (max-width: 1600px) {
-  body {
-    background: blue;
-  }
 }
 
 @media (max-width: 1400px) {
