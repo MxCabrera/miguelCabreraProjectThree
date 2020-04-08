@@ -302,6 +302,14 @@ body {
   width: 40%;
 }
 
+.lebron {
+  margin-right: -3rem;
+}
+
+.jordan {
+  margin-left: -2rem;
+}
+
 .lebron,
 .jordan {
   width: 35%;
@@ -309,57 +317,205 @@ body {
   position: center;
 }
 
-.rotates {
-  -webkit-animation: rotations 2.5s infinite linear;
-          animation: rotations 2.5s infinite linear;
+.shakes {
+  -webkit-animation: shakes 3s;
+          animation: shakes 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes rotations {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+.shake {
+  -webkit-animation: shake 2s;
+          animation: shake 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes shakes {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
   }
-  to {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-15deg);
+            transform: translate(-1px, -2px) rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(15deg);
+            transform: translate(-3px, 0px) rotate(15deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(15deg);
+            transform: translate(1px, -1px) rotate(15deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-15deg);
+            transform: translate(-1px, 2px) rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(15deg);
+            transform: translate(-3px, 1px) rotate(15deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-15deg);
+            transform: translate(3px, 1px) rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(15deg);
+            transform: translate(-1px, -1px) rotate(15deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-15deg);
+            transform: translate(1px, -2px) rotate(-15deg);
   }
 }
 
-@keyframes rotations {
-  from {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+@keyframes shakes {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(0deg);
+            transform: translate(1px, 1px) rotate(0deg);
   }
-  to {
-    -webkit-transform: rotate(5deg);
-            transform: rotate(5deg);
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(-15deg);
+            transform: translate(-1px, -2px) rotate(-15deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(15deg);
+            transform: translate(-3px, 0px) rotate(15deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(0deg);
+            transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(15deg);
+            transform: translate(1px, -1px) rotate(15deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(-15deg);
+            transform: translate(-1px, 2px) rotate(-15deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(15deg);
+            transform: translate(-3px, 1px) rotate(15deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(-15deg);
+            transform: translate(3px, 1px) rotate(-15deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(15deg);
+            transform: translate(-1px, -1px) rotate(15deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(0deg);
+            transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(-15deg);
+            transform: translate(1px, -2px) rotate(-15deg);
   }
 }
 
-.rotate {
-  -webkit-animation: rotation 2.5s infinite linear;
-          animation: rotation 2.5s infinite linear;
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(10deg);
+            transform: translate(1px, 1px) rotate(10deg);
+  }
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(0deg);
+            transform: translate(-1px, -2px) rotate(0deg);
+  }
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(-10deg);
+            transform: translate(-3px, 0px) rotate(-10deg);
+  }
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(10deg);
+            transform: translate(3px, 2px) rotate(10deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(0deg);
+            transform: translate(1px, -1px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(10deg);
+            transform: translate(-1px, 2px) rotate(10deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(-10deg);
+            transform: translate(-3px, 1px) rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(10deg);
+            transform: translate(3px, 1px) rotate(10deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(-10deg);
+            transform: translate(-1px, -1px) rotate(-10deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(10deg);
+            transform: translate(1px, 2px) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(0deg);
+            transform: translate(1px, -2px) rotate(0deg);
+  }
 }
 
-@-webkit-keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+@keyframes shake {
+  0% {
+    -webkit-transform: translate(1px, 1px) rotate(10deg);
+            transform: translate(1px, 1px) rotate(10deg);
   }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  10% {
+    -webkit-transform: translate(-1px, -2px) rotate(0deg);
+            transform: translate(-1px, -2px) rotate(0deg);
   }
-}
-
-@keyframes rotation {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+  20% {
+    -webkit-transform: translate(-3px, 0px) rotate(-10deg);
+            transform: translate(-3px, 0px) rotate(-10deg);
   }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+  30% {
+    -webkit-transform: translate(3px, 2px) rotate(10deg);
+            transform: translate(3px, 2px) rotate(10deg);
+  }
+  40% {
+    -webkit-transform: translate(1px, -1px) rotate(0deg);
+            transform: translate(1px, -1px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate(-1px, 2px) rotate(10deg);
+            transform: translate(-1px, 2px) rotate(10deg);
+  }
+  60% {
+    -webkit-transform: translate(-3px, 1px) rotate(-10deg);
+            transform: translate(-3px, 1px) rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: translate(3px, 1px) rotate(10deg);
+            transform: translate(3px, 1px) rotate(10deg);
+  }
+  80% {
+    -webkit-transform: translate(-1px, -1px) rotate(-10deg);
+            transform: translate(-1px, -1px) rotate(-10deg);
+  }
+  90% {
+    -webkit-transform: translate(1px, 2px) rotate(10deg);
+            transform: translate(1px, 2px) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(1px, -2px) rotate(0deg);
+            transform: translate(1px, -2px) rotate(0deg);
   }
 }
 
@@ -492,6 +648,10 @@ button.previous {
   height: 40%;
 }
 
+.lebronJ:hover {
+  background-image: url(/assets/pic6.jpg);
+}
+
 .magic {
   width: 60%;
 }
@@ -525,7 +685,8 @@ button.previous {
 }
 
 .results h1,
-.results h2 {
+.results h2,
+.results h3 {
   text-shadow: 2px 2px 2px #fff;
   font-size: 3rem;
   margin: 0;
@@ -548,13 +709,18 @@ button.previous {
 .resultBox {
   width: 65%;
   margin: 2rem auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
-  text-shadow: 2px 2px 2px #fff;
 }
 
 .resultBox img {
   padding-top: 2rem;
+}
+
+.highlight {
+  color: #702929;
+  font-size: 2rem;
+  text-shadow: 1px 1px 1px #000;
 }
 
 button.restart {

@@ -59,6 +59,13 @@ body {
     width: 40%;
 }
 
+.lebron {
+    margin-right: -3rem;
+}
+.jordan {
+    margin-left: -2rem;
+}
+
 .lebron,
 .jordan {
     width: 35%;
@@ -66,31 +73,70 @@ body {
     position: center;
 }
 
-.rotates {
-    animation: rotations 2.5s infinite linear;
+.shakes {
+    animation: shakes 3s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes rotations {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(5deg);
-  }
+.shake {
+    animation: shake 2s;
+    animation-iteration-count: infinite;
 }
 
-.rotate {
-    animation: rotation 2.5s infinite linear;
+@keyframes shakes {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-15deg); }
+  20% { transform: translate(-3px, 0px) rotate(15deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(15deg); }
+  50% { transform: translate(-1px, 2px) rotate(-15deg); }
+  60% { transform: translate(-3px, 1px) rotate(15deg); }
+  70% { transform: translate(3px, 1px) rotate(-15deg); }
+  80% { transform: translate(-1px, -1px) rotate(15deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-15deg); }
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(10deg); }
+  10% { transform: translate(-1px, -2px) rotate(0deg); }
+  20% { transform: translate(-3px, 0px) rotate(-10deg); }
+  30% { transform: translate(3px, 2px) rotate(10deg); }
+  40% { transform: translate(1px, -1px) rotate(0deg); }
+  50% { transform: translate(-1px, 2px) rotate(10deg); }
+  60% { transform: translate(-3px, 1px) rotate(-10deg); }
+  70% { transform: translate(3px, 1px) rotate(10deg); }
+  80% { transform: translate(-1px, -1px) rotate(-10deg); }
+  90% { transform: translate(1px, 2px) rotate(10deg); }
+  100% { transform: translate(1px, -2px) rotate(0deg); }
 }
+
+// .rotates {
+//     animation: rotations 2.5s infinite linear;
+// }
+
+
+// @keyframes rotations {
+//   from {
+//     transform: rotate(360deg);
+//   }
+//   to {
+//     transform: rotate(5deg);
+//   }
+// }
+
+// .rotate {
+//     animation: rotation 2.5s infinite linear;
+// }
+
+// @keyframes rotation {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
 
 .playersPic {
     display: flex;
@@ -205,6 +251,10 @@ button.previous {
     height: 40%;
 }
 
+.lebronJ:hover {
+    background-image: url(/assets/pic6.jpg);
+}
+
 
 .magic {
     width: 60%;
@@ -230,7 +280,8 @@ button.previous {
 }
 
 .results h1,
-.results h2 {
+.results h2,
+.results h3 {
     text-shadow: 2px 2px 2px #fff;
     font-size: 3rem;
     margin: 0;
@@ -253,13 +304,19 @@ button.previous {
 .resultBox {
     width: 65%;
     margin: 2rem auto; 
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
-    text-shadow: 2px 2px 2px #fff;
+    // text-shadow: 2px 2px 2px #fff;
 }
 
 .resultBox img {
     padding-top: 2rem;
+}
+
+.highlight {
+    color: rgb(112, 41, 41);
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #000;
 }
 
 button.restart {

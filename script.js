@@ -94,7 +94,7 @@ const questions = [
         image: './assets/leBronJames.jpg',
         class: 'lebronJ',
         awards: `6x NBA Champion | 14x AllStar | 5x MVP | Rookie of the Year | 6x Finals MVP | 10x Scoring Champ | 3x Steals Champ | 11x Defensive 1st Team`,
-        info: 'LeBron James is known for his basketball IQ, his strength, his out of world body that maintains him for 17 straight season of basketball. Widely known as King James he has been in the finals in 8 out of 9 of the last Finals.',
+        info: 'You are known for your high IQ in your field of work, utilizing your strength and extraordinary drive to break through any barriers that may come your way. You are prone to bumps and bruises along the journey, but you never give up and plan to be the best and most successful in the long run!',
         stats: {
             points: 27.4,
             rebounds: 7.4,
@@ -110,7 +110,7 @@ const questions = [
         image: './assets/michaelJordan.jpg',
         class: 'mJordan',
         awards: `6x NBA Champion | 14x AllStar | 5x MVP | Rookie of the Year | 6x Finals MVP | 10x Scoring Champ | 3x Steals Champ | 11x Defensive 1st Team`,
-        info: 'Michael Jordan known as the greatest basketball player ever to play the game. He won a championship 6 times, but that feat only gets better when you hear that he won 3 straight championships; twice! He retired from basketball to play baseball after the first 3-peat, only to come back and win another 3 championships.',
+        info: 'You are a born winner. One of the fiercest competitors with an intimidating demeanor. Your tenacious attitude, will-power, and consistent hard work breeds success at an incredibly high rate. Failure is not in your vocabulary. Your name will be known, and people will be inspired to follow your path.',
         stats: {
             points: 30.0,
             rebounds: 6.2,
@@ -126,7 +126,7 @@ const questions = [
         image: './assets/magicJohnson2.jpeg',
         class: 'magic',
         awards: `5x NBA Champion | 12x AllStar | 3x MVP | 2x Steal Champ | 3x Finals MVP | 4x Assist Champ`,
-        info: `Magic Johnson known for his passing ability and height advantage over his opponents. As a point guard for the Los Angeles Lakers, he bolsters an incredibly 6'9" frame to match his IQ.`,
+        info: `You are a born leader. What you bring to the table in any circumstance is considered "magical". Your winning attitude helps bring out the strength in the people around you, which imminently leads to your teams success. You do not let anything or anyone stand in the way once you are committed to a goal.`,
         stats: {
             points: 19.5,
             rebounds: 7.2,
@@ -142,7 +142,7 @@ const questions = [
         image: './assets/timDuncan.jpg',
         class: 'timothy',
         awards: `5x NBA Champion | 15x AllStar | 2x MVP | Rookie of the Year | 3x Finals MVP`,
-        info: `Tim Duncan known for his fundamental game. He knew how to maneuver around the basket with high IQ and veteran moves wihtout exhausting too much energy.`,
+        info: `You are humble, a silent killer, and you do what it takes to get success in the most fundamental way. Considered a genius; you do things the right way, without the need to be captured in the spotlight. You get the job done and your consistent success inspires others overtime. Due to your hardwork, you are an icon in what you decide to pursue.`,
         stats: {
             points: 19.0,
             rebounds: 10.8,
@@ -267,7 +267,7 @@ function nextQuestion(){
         let pAwards = '';
         let pInfo = '';
         let pStats = '';
-
+        //another if statement for multiple choices corresponding to total score
         if (finalScore >= 5 && finalScore <= 9) {
             pName = `${playerInfo.james.name}`;
             pImage = `${playerInfo.james.image}`;
@@ -275,6 +275,7 @@ function nextQuestion(){
             pAwards = `${playerInfo.james.awards}`;
             pInfo = `${playerInfo.james.info}`;
             pStats = `Points: ${playerInfo.james.stats.points} | Rebounds: ${playerInfo.james.stats.rebounds} | Assists: ${playerInfo.james.stats.assists} | Steals: ${playerInfo.james.stats.steals} | Blocks: ${playerInfo.james.stats.blocks} | Field Goal: ${playerInfo.james.stats.fieldGoal}%`
+
         } else if (finalScore >= 10 && finalScore <= 13) {
             pName = `${playerInfo.jordan.name}`;
             pImage = `${playerInfo.jordan.image}`;
@@ -282,6 +283,7 @@ function nextQuestion(){
             pAwards = `${playerInfo.jordan.awards}`;
             pInfo = `${playerInfo.jordan.info}`;
             pStats = `Points: ${playerInfo.jordan.stats.points} | Rebounds: ${playerInfo.jordan.stats.rebounds} | Assists: ${playerInfo.jordan.stats.assists} | Steals: ${playerInfo.jordan.stats.steals} | Blocks: ${playerInfo.jordan.stats.blocks} | Field Goal: ${playerInfo.jordan.stats.fieldGoal}%`
+
         } else if (finalScore >= 14 && finalScore <= 16){
             pName = `${playerInfo.magic.name}`;
             pImage = `${playerInfo.magic.image}`;
@@ -289,6 +291,7 @@ function nextQuestion(){
             pAwards = `${playerInfo.magic.awards}`;
             pInfo = `${playerInfo.magic.info}`;
             pStats = `Points: ${playerInfo.magic.stats.points} | Rebounds: ${playerInfo.magic.stats.rebounds} | Assists: ${playerInfo.magic.stats.assists} | Steals: ${playerInfo.magic.stats.steals} | Blocks: ${playerInfo.magic.stats.blocks} | Field Goal: ${playerInfo.magic.stats.fieldGoal}%`
+
         } else if (finalScore >= 17 && finalScore <= 20) {
             pName = `${playerInfo.duncan.name}`;
             pImage = `${playerInfo.duncan.image}`;
@@ -298,20 +301,18 @@ function nextQuestion(){
             pStats = `Points: ${playerInfo.duncan.stats.points} | Rebounds: ${playerInfo.duncan.stats.rebounds} | Assists: ${playerInfo.duncan.stats.assists} | Steals: ${playerInfo.duncan.stats.steals} | Blocks: ${playerInfo.duncan.stats.blocks} | Field Goal: ${playerInfo.duncan.stats.fieldGoal}%`
         }
 
-
+        // displaying results to the DOM.
         results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
             <img class="${pImageClass}" src="${pImage}">
             <h2>You are ${pName}!</h2>
-            <p>${pAwards}</p>
+            <p class="highlight">${pAwards}</p>
             <p>${pInfo}</p>
             <h3>Career Statistics: (Per Game Average)</h3>
-            <p>${pStats}</p>
+            <p class="highlight">${pStats}</p>
             </div>
             <button class="restart"> Restart </button>`
-            // console.log(pInfo)
-        //another if statement for multiple choices.
     }
 
 
