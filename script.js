@@ -126,7 +126,7 @@ const questions = [
         image: './assets/magicJohnson2.jpeg',
         class: 'magic',
         awards: `5x NBA Champion | 12x AllStar | 3x MVP | 2x Steal Champ | 3x Finals MVP | 4x Assist Champ`,
-        info: `You are a born leader. What you bring to the table in any circumstance is considered "magical". Your winning attitude helps bring out the strength in the people around you, which imminently leads to your teams success. You do not let anything or anyone stand in the way once you are committed to a goal.`,
+        info: `You are a born leader. What you bring to the table in any circumstance is considered "magical". Your winning attitude helps bring out the strength in everyone around you, which imminently leads to your teams success. You do not let anything or anyone stand in the way once you are committed to a goal.`,
         stats: {
             points: 19.5,
             rebounds: 7.2,
@@ -142,7 +142,7 @@ const questions = [
         image: './assets/timDuncan.jpg',
         class: 'timothy',
         awards: `5x NBA Champion | 15x AllStar | 2x MVP | Rookie of the Year | 3x Finals MVP`,
-        info: `You are humble, a silent killer, and you do what it takes to get success in the most fundamental way. Considered a genius; you do things the right way, without the need to be captured in the spotlight. You get the job done and your consistent success inspires others overtime. Due to your hardwork, you are an icon in what you decide to pursue.`,
+        info: `You are considered a humble, silent killer. You do what it takes to get success in the most fundamental way. Being known for doings things the right way, without the need to be captured in the spotlight. You get the job done and your consistent success will inspire others overtime. Due to your hardwork, you will be an icon in what you decide to pursue.`,
         stats: {
             points: 19.0,
             rebounds: 10.8,
@@ -203,8 +203,25 @@ function beginQuiz() {
     if (startQuiz) {
         header.style.display = 'none';
         quiz.style.display = 'block';
+        playTheme()
     }
 };
+
+function playAudio() {
+    let audio = new Audio("./assets/congrats.mp3");
+    audio.play();
+}
+
+function playBuckets() {
+    let audio = new Audio("./assets/bucket.mp3");
+    audio.play();
+}
+
+function playTheme() {
+    let audio = new Audio("./assets/themeSong.mp3");
+    audio.play();
+}
+
 
 
 //.. create a question when user enters the DOM
@@ -230,6 +247,7 @@ function createQuestions(index){
     // use the value of answer.......
 }
 
+
 //.. move on to the next question when next button clicked
 function nextQuestion(){
     let userChoice = document.querySelector('div input[type="radio"]:checked');
@@ -250,6 +268,10 @@ function nextQuestion(){
     mainQuestion++
 
     userChoice.checked = false;
+
+    if (mainQuestion !== totalQuestions) {
+        playBuckets()
+    }
 
     if (mainQuestion == totalQuestions - 1) {
         nextButton.textContent = 'Finish';
@@ -305,14 +327,16 @@ function nextQuestion(){
         results.innerHTML = `
             <h1> Your Score: ${finalScore}</h1>
             <div class="resultBox">
-            <img class="${pImageClass}" src="${pImage}">
-            <h2>You are ${pName}!</h2>
-            <p class="highlight">${pAwards}</p>
-            <p>${pInfo}</p>
-            <h3>Career Statistics: (Per Game Average)</h3>
-            <p class="highlight">${pStats}</p>
+                <img class="${pImageClass}" src="${pImage}">
+                <h2>You are ${pName}!</h2>
+                <p class="statsInfo">${pAwards}</p>
+                <p class="highlight">${pInfo}</p>
+                <h3>Career Statistics: (Per Game Average)</h3>
+                <p class="statsInfo">${pStats}</p>
             </div>
             <button class="restart"> Restart </button>`
+        
+        playAudio();
     }
 
 
@@ -351,6 +375,13 @@ results.addEventListener('click', resetQuiz);
 previousButton.addEventListener('click', previousQuestion);
 nextButton.addEventListener('click', nextQuestion);
 startQuiz.addEventListener('click', beginQuiz);
+
 createQuestions(mainQuestion);
 
 // console.log(`it works!`);
+
+
+    // function playAudio() {
+    //     const audio = document.getElementById("audio");
+    //     audio.play();
+    // }

@@ -5,6 +5,9 @@
     body {
         background: red;
     }
+    .resultBox img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -35,7 +38,7 @@
     }
     .resultBox img {
         padding-top: 1rem;
-        width: 40%;
+        width: 60%;
         height: auto;
     }
     .credit {
@@ -86,11 +89,6 @@
     }
     .title {
         margin-bottom: 1rem;
-    }
-    .resultBox img {
-        padding-top: 1rem;
-        width: 50%;
-        height: auto;
     }
     .results .initialText p {
         font-size: 2.1rem;
