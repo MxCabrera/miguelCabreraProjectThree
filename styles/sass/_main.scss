@@ -48,15 +48,16 @@ body {
     text-shadow: 2px 2px 2px #000;
 }
 
-.mainTitle:hover {
+.wrapper:hover  .mainTitle{
     transform: scale(1.1);
 }
 
 .goatAcronym {
     font-size: 3rem;
     color: $color-three;
-    margin-bottom: 0;
+    margin: 0 auto;
     text-shadow: 2px 2px 2px #000;
+    
 }
 
 .strongGoat {
@@ -157,11 +158,13 @@ body {
     border-radius: 10px;
     padding: 1rem;
     text-transform: uppercase;
-    // margin-bottom: 3rem;
+    margin-top: -1rem;
 }
 
 .titleButton:hover {
-    background-color: rgb(99, 97, 97);
+    background-color: rgb(20, 20, 20);
+    box-shadow: 1px 1px 10px #fff;
+    transition: all 0.5s;
 }
 
 .quizBox {
@@ -225,17 +228,18 @@ button {
     padding: 0.5rem 1.5rem;
     margin: 0 auto;
     border: none;
+    font-family: 'Share Tech', sans-serif;
     font-weight: 300;
     color: $color-four;
     outline: none;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    // box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
 }
 
 button:hover,
 button:focus {
     font-weight: 500;
-    box-shadow: 1px 1px 1px rgba(255,255,255, 0.5);
-    transform: scale(1.1);
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+    transform: scale(1.05);
     color: $color-three;
 }
 
@@ -277,15 +281,15 @@ button.previous {
     width: 40%;
 }
 
-.scoring h2 {
+.results .scoring {
     font-size: 3rem;
-    padding-top: 2rem;
+    padding: 2rem 0;
     text-shadow: 2px 2px 2px #fff;
 }
 
 .resultBox1  {
     padding: 1rem;
-    width: 65%;
+    width: 60%;
     margin: 1rem auto; 
     background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
@@ -311,9 +315,6 @@ button.previous {
     color: rgb(99, 97, 97);
 }
 
-// .results {
-//     position: relative;
-// }
 
 .results h1,
 .results h2,
@@ -334,7 +335,7 @@ button.previous {
 
 .results p {
     margin: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 }
 
 .resultBox {
@@ -342,6 +343,7 @@ button.previous {
     margin: 1rem auto; 
     background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
+    padding: 0 1rem 1rem 1rem;
     // text-shadow: 2px 2px 2px #fff;
 }
 
@@ -386,4 +388,9 @@ button.restart:hover {
     letter-spacing: 1.5px;
     padding: 0.5rem 0;
     position: relative;
+    
+}
+
+.copyright p {
+    font-size: 1rem;
 }

@@ -93,7 +93,7 @@ const questions = [
         name: 'LeBron James',
         image: './assets/leBronJames.jpg',
         class: 'lebronJ',
-        awards: `6x NBA Champion | 14x AllStar | 5x MVP | Rookie of the Year | 6x Finals MVP | 10x Scoring Champ | 3x Steals Champ | 11x Defensive 1st Team`,
+        awards: `3x NBA Champion | 16x AllStar | 4x MVP | 3x Finals MVP | 1x Scoring Champ | 6x All-Defense Award`,
         info: 'You are known for your high IQ in your field of work, utilizing your strength and extraordinary drive to break through any barriers that may come your way. You are prone to bumps and bruises along the journey, but you never give up and plan to be the best and most successful in the long run!',
         stats: {
             points: 27.4,
@@ -109,7 +109,7 @@ const questions = [
         name: 'Michael Jordan',
         image: './assets/michaelJordan.jpg',
         class: 'mJordan',
-        awards: `6x NBA Champion | 14x AllStar | 5x MVP | Rookie of the Year | 6x Finals MVP | 10x Scoring Champ | 3x Steals Champ | 11x Defensive 1st Team`,
+        awards: `6x NBA Champion | 14x AllStar | 5x MVP | 6x Finals MVP | 10x Scoring Champ | 11x Defensive 1st Team`,
         info: 'You are a born winner. One of the fiercest competitors with an intimidating demeanor. Your tenacious attitude, will-power, and consistent hard work breeds success at an incredibly high rate. Failure is not in your vocabulary. Your name will be known, and people will be inspired to follow your path.',
         stats: {
             points: 30.1,

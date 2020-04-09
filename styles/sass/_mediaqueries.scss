@@ -12,11 +12,34 @@
         background: green;
 
     }
+    .mainTitle {
+        margin-top: 2rem;
+    }
+    .strongGoat {
+        width: 55%;
+    }
+    .goatAcronym {
+        margin-top: 1rem;
+    }
+    .lebron,
+    .jordan {
+        width: 45%;
+        height: 75%;
+        position: center;
+    }
     .title {
         font-size: 3rem;
     }
     .question {
         font-size: 2rem;
+    }
+    .resultBox img {
+        padding-top: 1rem;
+        width: 40%;
+        height: auto;
+    }
+    .credit {
+        right: 65px;
     }
 }
 
@@ -29,11 +52,57 @@
     .resultBox {
         width: 70%;
     }
+    .results h3 {
+        font-size: 1.7rem;
+    }
+    .results h2 {
+        font-size: 2rem;
+        margin-top: 0.3rem;
+    }
+    .results p {
+        font-size: 1.3rem;
+    }
+    .credit {
+        top: -36px;
+        right: 57px;
+        font-size: 0.7rem;
+    }
 }
 
 @media (max-width: 900px) {
     body {
         background: purple;
+    }
+    .mainTitle {
+        font-size: 6rem;
+        margin-bottom: 1rem;
+    }
+    .goatAcronym {
+        font-size: 2.3rem;
+    }
+    .titleButton {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    .title {
+        margin-bottom: 1rem;
+    }
+    .resultBox img {
+        padding-top: 1rem;
+        width: 50%;
+        height: auto;
+    }
+    .results .initialText p {
+        font-size: 2.1rem;
+    }
+    .results h2,
+    .results h3 {
+        font-size: 1.7rem;
+        margin-top: 0.3rem;
+    }
+
+    .results p {
+        font-size: 1.3rem;
     }
 }
 
@@ -41,27 +110,151 @@
     body {
         background: orange;
     }
+    .mainTitle {
+        font-size: 5rem;
+        margin-bottom: 1rem;
+    }
+    .strongGoat {
+        margin-top: 2rem;
+    }
+    .lebron {
+        margin-right: -1rem;
+    }
+    .jordan {
+        margin-left: -2rem;
+    }
+    .question {
+        font-size: 1.7rem;
+    }
+    .choice {
+        width: 90%;
+    }
+    button.next, button.previous {
+    font-size: 1.2rem;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .mainButtons > * {
+    margin: 0.5rem;
+    }
     .quizBox,
     .resultBox1,
     .resultBox {
         width: 75%;
     }
-
+    .results .initialText p {
+        font-size: 1.55rem;
+    }
+    .results p {
+        font-size: 1.1rem;
+    }
+    .credit {
+        right: 42px;
+    }
 }
 
 @media (max-width: 500px) {
     body {
         background: pink;
     }
+    .mainTitle {
+        font-size: 4.0rem;
+    }
+    .goatAcronym {
+        font-size: 1.8rem;
+    }
+    .strongGoat {
+        display: none;
+    }
+    .lebron {
+        margin-right: -3rem;
+    }
+    .jordan {
+        margin-right: 2rem;
+    }
+    .lebron,
+    .jordan {
+        width: 55%;
+        height: 80%;
+        position: center;
+    }
+    .quizBox {
+        padding: 2rem;
+    }
     .quizBox,
     .resultBox1,
     .resultBox {
         width: 90%;
     }
+    .title {
+        margin-bottom: 0;
+    }
+    .choice {
+        font-size: 1.2rem; 
+        width: 95%;
+    }
+    .results .scoring {
+        font-size: 2.7rem;
+    }
+    .results .initialText p {
+        font-size: 1.3rem;
+    }
+    .credit {
+        right: 31px;
+        font-size: 0.6rem;
+    }
+    .copyright p {
+        font-size: 0.8rem;
+    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     body {
         background: brown;
+    }
+    .mainTitle {
+        font-size: 3.2rem;
+    }
+    .goatAcronym {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .question {
+        font-size: 1.3rem;
+    }
+    button.next, button.previous {
+        font-size: 1rem;
+
+    }
+    .mainButtons > * {
+        margin: 0.3rem;
+    }
+    button {
+        padding: 0.5rem 1.1rem;
+    }
+    .results .scoring {
+        font-size: 2.2rem;
+    }
+    .results h2 {
+        font-size: 1.5rem;
+    }
+    .results h3 {
+        font-size: 1.3rem;
+    }
+    .results p {
+        font-size: 0.95rem;
+    }
+    .results .initialText p {
+        font-size: 1rem;
+    }
+    .credit {
+        top: -34px;
+        right: 24px;
+    }
+    .copyright p {
+        font-size: 0.7rem;
     }
 }
