@@ -613,6 +613,26 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+.bubble {
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 25rem;
+  color: #000;
+  background: #ffffff70;
+  border-radius: 25%;
+}
+
+.smallBubble {
+  position: absolute;
+  right: 5rem;
+  bottom: 23rem;
+  background: #ffffff70;
+  color: rgba(0, 0, 0, 0);
+  border-radius: 35%;
 }
 
 .titleButton {
@@ -840,6 +860,20 @@ button.previous {
   margin-top: 2rem;
 }
 
+.youtube {
+  font-size: 1.5rem;
+}
+
+.youtube a {
+  color: black;
+  text-decoration: none;
+}
+
+.youtube a:hover {
+  color: #383535;
+  text-decoration: underline;
+}
+
 .resultBox .highlight {
   font-size: 1.7rem;
   letter-spacing: 1.2px;
@@ -883,10 +917,15 @@ button.restart:hover {
 .copyright {
   text-align: center;
   background-color: #000;
-  color: #FFF;
   letter-spacing: 1.5px;
+  color: #FFF;
   padding: 0.5rem 0;
   position: relative;
+}
+
+.copyright a {
+  color: #FFF;
+  text-decoration: none;
 }
 
 .copyright p {
@@ -894,18 +933,15 @@ button.restart:hover {
 }
 
 @media (max-width: 1400px) {
-  body {
-    background: red;
+  .bubble {
+    bottom: 19rem;
   }
-  .resultBox img {
-    width: 50%;
+  .smallBubble {
+    bottom: 18rem;
   }
 }
 
 @media (max-width: 1200px) {
-  body {
-    background: green;
-  }
   .mainTitle {
     margin-top: 2rem;
   }
@@ -927,10 +963,11 @@ button.restart:hover {
   .question {
     font-size: 2rem;
   }
+  .resultBox .highlight {
+    font-size: 1.5rem;
+  }
   .resultBox img {
-    padding-top: 1rem;
-    width: 60%;
-    height: auto;
+    width: 80%;
   }
   .credit {
     right: 65px;
@@ -938,8 +975,11 @@ button.restart:hover {
 }
 
 @media (max-width: 1000px) {
-  body {
-    background: yellow;
+  .bubble {
+    bottom: 18rem;
+  }
+  .smallBubble {
+    bottom: 17rem;
   }
   .quizBox,
   .resultBox1,
@@ -964,15 +1004,18 @@ button.restart:hover {
 }
 
 @media (max-width: 900px) {
-  body {
-    background: purple;
-  }
   .mainTitle {
-    font-size: 6rem;
+    font-size: 6.5rem;
     margin-bottom: 1rem;
   }
   .goatAcronym {
     font-size: 2.3rem;
+  }
+  .bubble {
+    bottom: 16rem;
+  }
+  .smallBubble {
+    bottom: 15rem;
   }
   .titleButton {
     font-size: 1.8rem;
@@ -992,12 +1035,15 @@ button.restart:hover {
   .results p {
     font-size: 1.3rem;
   }
+  .resultBox .highlight {
+    font-size: 1.3rem;
+  }
+  .youtube {
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 768px) {
-  body {
-    background: orange;
-  }
   .mainTitle {
     font-size: 5rem;
     margin-bottom: 1rem;
@@ -1011,6 +1057,12 @@ button.restart:hover {
   .jordan {
     margin-left: -2rem;
   }
+  .bubble {
+    bottom: -3rem;
+  }
+  .smallBubble {
+    bottom: 0rem;
+  }
   .question {
     font-size: 1.7rem;
   }
@@ -1019,6 +1071,9 @@ button.restart:hover {
   }
   button.next, button.previous {
     font-size: 1.2rem;
+  }
+  .titleButton {
+    font-size: 1.5rem;
   }
   .title {
     font-size: 2.5rem;
@@ -1035,19 +1090,28 @@ button.restart:hover {
     font-size: 1.55rem;
   }
   .results p {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+  }
+  .statsInfo {
+    line-height: 20px;
+    text-shadow: none;
+    font-weight: 700;
   }
   .credit {
     right: 42px;
   }
+  .results h1 {
+    font-size: 2.5rem;
+  }
+  .results h3 {
+    font-size: 1.4rem;
+  }
 }
 
 @media (max-width: 500px) {
-  body {
-    background: pink;
-  }
   .mainTitle {
-    font-size: 4.0rem;
+    font-size: 4.5rem;
+    margin-top: 0;
   }
   .goatAcronym {
     font-size: 1.8rem;
@@ -1067,6 +1131,17 @@ button.restart:hover {
     height: 80%;
     position: center;
   }
+  .bubble {
+    bottom: 12rem;
+    right: -1rem;
+  }
+  .smallBubble {
+    bottom: 12rem;
+    right: 4.5rem;
+  }
+  .titleButton {
+    font-size: 1.2rem;
+  }
   .quizBox {
     padding: 2rem;
   }
@@ -1082,11 +1157,20 @@ button.restart:hover {
     font-size: 1.2rem;
     width: 95%;
   }
+  .resultBox img {
+    width: 90%;
+  }
   .results .scoring {
     font-size: 2.7rem;
   }
   .results .initialText p {
     font-size: 1.3rem;
+  }
+  .youtube {
+    font-size: 0.9rem;
+  }
+  button.restart {
+    font-size: 1.7rem;
   }
   .credit {
     right: 31px;
@@ -1098,14 +1182,26 @@ button.restart:hover {
 }
 
 @media (max-width: 400px) {
-  body {
-    background: brown;
-  }
   .mainTitle {
     font-size: 3.2rem;
   }
   .goatAcronym {
     font-size: 1.5rem;
+  }
+  .lebron {
+    margin-right: -2rem;
+  }
+  .jordan {
+    margin-right: 1rem;
+  }
+  .bubble {
+    font-size: 0.8rem;
+    bottom: -1rem;
+    right: -1.5rem;
+  }
+  .smallBubble {
+    bottom: 1rem;
+    right: 3rem;
   }
   .title {
     font-size: 2rem;
@@ -1122,6 +1218,14 @@ button.restart:hover {
   button {
     padding: 0.5rem 1.1rem;
   }
+  .quizBox,
+  .resultBox1,
+  .resultBox {
+    width: 100%;
+  }
+  .resultBox img {
+    width: 100%;
+  }
   .results .scoring {
     font-size: 2.2rem;
   }
@@ -1132,7 +1236,7 @@ button.restart:hover {
     font-size: 1.3rem;
   }
   .results p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
   }
   .results .initialText p {
     font-size: 1rem;

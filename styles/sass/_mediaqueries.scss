@@ -2,19 +2,22 @@
 
 
 @media (max-width: 1400px) {
-    body {
-        background: red;
+    // body {
+    //     background: red;
+    // }
+    .bubble {
+        bottom: 19rem;
     }
-    .resultBox img {
-        width: 50%;
+    .smallBubble {
+        bottom: 18rem;
     }
 }
 
 @media (max-width: 1200px) {
-    body {
-        background: green;
+    // body {
+    //     background: green;
 
-    }
+    // }
     .mainTitle {
         margin-top: 2rem;
     }
@@ -36,10 +39,11 @@
     .question {
         font-size: 2rem;
     }
+    .resultBox .highlight {
+        font-size: 1.5rem;
+    }
     .resultBox img {
-        padding-top: 1rem;
-        width: 60%;
-        height: auto;
+        width: 80%;
     }
     .credit {
         right: 65px;
@@ -47,8 +51,14 @@
 }
 
 @media (max-width: 1000px) {
-    body {
-        background: yellow;
+    // body {
+    //     background: yellow;
+    // }
+    .bubble {
+        bottom: 18rem;
+    }
+    .smallBubble {
+        bottom: 17rem;
     }
     .quizBox,
     .resultBox1,
@@ -73,15 +83,21 @@
 }
 
 @media (max-width: 900px) {
-    body {
-        background: purple;
-    }
+    // body {
+    //     background: purple;
+    // }
     .mainTitle {
-        font-size: 6rem;
+        font-size: 6.5rem;
         margin-bottom: 1rem;
     }
     .goatAcronym {
         font-size: 2.3rem;
+    }
+    .bubble {
+        bottom: 16rem;
+    }
+    .smallBubble {
+        bottom: 15rem;
     }
     .titleButton {
         font-size: 1.8rem;
@@ -98,16 +114,21 @@
         font-size: 1.7rem;
         margin-top: 0.3rem;
     }
-
     .results p {
         font-size: 1.3rem;
+    }
+    .resultBox .highlight {
+        font-size: 1.3rem;
+    }
+    .youtube {
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        background: orange;
-    }
+    // body {
+    //     background: orange;
+    // }
     .mainTitle {
         font-size: 5rem;
         margin-bottom: 1rem;
@@ -121,6 +142,12 @@
     .jordan {
         margin-left: -2rem;
     }
+    .bubble {
+        bottom: -3rem;
+    }
+    .smallBubble {
+        bottom: 0rem;
+    }
     .question {
         font-size: 1.7rem;
     }
@@ -129,6 +156,9 @@
     }
     button.next, button.previous {
     font-size: 1.2rem;
+    }
+    .titleButton {
+        font-size: 1.5rem;
     }
     .title {
         font-size: 2.5rem;
@@ -145,19 +175,31 @@
         font-size: 1.55rem;
     }
     .results p {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
+    }
+    .statsInfo {
+        line-height: 20px;
+        text-shadow: none;
+        font-weight: 700;
     }
     .credit {
         right: 42px;
     }
+    .results h1 {
+        font-size: 2.5rem;
+    }
+    .results h3 {
+    font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 500px) {
-    body {
-        background: pink;
-    }
+    // body {
+    //     background: pink;
+    // }
     .mainTitle {
-        font-size: 4.0rem;
+        font-size: 4.5rem;
+        margin-top: 0;
     }
     .goatAcronym {
         font-size: 1.8rem;
@@ -177,6 +219,17 @@
         height: 80%;
         position: center;
     }
+    .bubble {
+        bottom: 12rem;
+        right: -1rem
+    }
+    .smallBubble {
+        bottom: 12rem;
+        right: 4.5rem;
+    }
+    .titleButton {
+        font-size: 1.2rem;
+    }
     .quizBox {
         padding: 2rem;
     }
@@ -192,11 +245,20 @@
         font-size: 1.2rem; 
         width: 95%;
     }
+    .resultBox img {
+        width: 90%;
+    }
     .results .scoring {
         font-size: 2.7rem;
     }
     .results .initialText p {
         font-size: 1.3rem;
+    }
+    .youtube {
+        font-size: 0.9rem;
+    }
+    button.restart {
+        font-size: 1.7rem;
     }
     .credit {
         right: 31px;
@@ -205,17 +267,33 @@
     .copyright p {
         font-size: 0.8rem;
     }
+
 }
 
 @media (max-width: 400px) {
-    body {
-        background: brown;
-    }
+    // body {
+    //     background: brown;
+    // }
     .mainTitle {
         font-size: 3.2rem;
     }
     .goatAcronym {
         font-size: 1.5rem;
+    }
+    .lebron {
+        margin-right: -2rem;
+    }
+    .jordan {
+        margin-right: 1rem;
+    }
+    .bubble {
+        font-size: 0.8rem;
+        bottom: -1rem;
+        right: -1.5rem
+    }
+    .smallBubble {
+        bottom: 1rem;
+        right: 3rem;
     }
     .title {
         font-size: 2rem;
@@ -233,6 +311,14 @@
     button {
         padding: 0.5rem 1.1rem;
     }
+    .quizBox,
+    .resultBox1,
+    .resultBox {
+        width: 100%;
+    }
+    .resultBox img {
+        width: 100%;
+    }
     .results .scoring {
         font-size: 2.2rem;
     }
@@ -243,7 +329,7 @@
         font-size: 1.3rem;
     }
     .results p {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
     }
     .results .initialText p {
         font-size: 1rem;
