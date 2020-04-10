@@ -156,6 +156,7 @@
     }
     button.next, button.previous {
     font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
     }
     .titleButton {
         font-size: 1.5rem;
@@ -245,6 +246,10 @@
         font-size: 1.2rem; 
         width: 95%;
     }
+    button.next, button.previous {
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
     .resultBox img {
         width: 90%;
     }
@@ -302,7 +307,8 @@
         font-size: 1.3rem;
     }
     button.next, button.previous {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.9rem;
 
     }
     .mainButtons > * {

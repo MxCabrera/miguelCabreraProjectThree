@@ -5,12 +5,12 @@ const playerInfo = {};
 const questions = [
     {
         "question": "What is your favourite food?",
-        "answer1": "Tacos",
-        "answer1Total": "1",
+        "answer1": "Fish",
+        "answer1Total": "3",
         "answer2": "Steak",
         "answer2Total": "2",
-        "answer3": "Fish",
-        "answer3Total": "3",
+        "answer3": "Tacos",
+        "answer3Total": "1",
         "answer4": "Shrimp",
         "answer4Total": "4"
     }, {
@@ -25,33 +25,33 @@ const questions = [
         "answer4Total": "4"
     }, {
         "question": "What is your favourite color?",
-        "answer1": "Navy Blue",
-        "answer1Total": "1",
+        "answer1": "Grey",
+        "answer1Total": "4",
         "answer2": "Deep Red",
         "answer2Total": "2",
         "answer3": "Yellow",
         "answer3Total": "3",
-        "answer4": "Grey",
-        "answer4Total": "4"
+        "answer4": "Navy Blue",
+        "answer4Total": "1",
     }, {
         "question": "Ten seconds on the clock, what are you doing?",
-        "answer1": "Making the Game Winning Play",
-        "answer1Total": "1",
-        "answer2": "Shooting the Game Winning shot",
-        "answer2Total": "2",
-        "answer3": "Passing an alley-oop to win the game ",
-        "answer3Total": "3",
-        "answer4": "Dribbling ball for easy backboard shot",
-        "answer4Total": "4"
+        "answer1": "Shooting the game-winning shot",
+        "answer1Total": "2",
+        "answer2": "Dribbling ball for easy backboard shot",
+        "answer2Total": "4",
+        "answer3": "Making the game-winning play",
+        "answer3Total": "1",
+        "answer4": "Passing an alley-oop to win the game ",
+        "answer4Total": "3"
     }, {
         "question": "You just got the game winning shot, how do you celebrate?",
-        "answer1": "Beat your chest, angrily",
-        "answer1Total": "1",
-        "answer2": "Stick your tongue out, with emphasis",
-        "answer2Total": "2",
-        "answer3": "Raising a hand up, running down the court",
-        "answer3Total": "3",
-        "answer4": "Remain silent, being humble",
+        "answer1": "Raising a hand up running down the court",
+        "answer1Total": "3",
+        "answer2": "Beating your chest angrily",
+        "answer2Total": "1",
+        "answer3": "Sticking your tongue out to crowd",
+        "answer3Total": "2",
+        "answer4": "Remaining silent, being humble",
         "answer4Total": "4"
     }
     , {
@@ -60,16 +60,16 @@ const questions = [
         "answer1Total": "2",
         "answer2": "Play relaxing sports",
         "answer2Total": "1",
-        "answer3": "Watch Tv",
+        "answer3": "Watch TV",
         "answer3Total": "3",
-        "answer4": "Board Games",
+        "answer4": "Enjoy board Games",
         "answer4Total": "4"
     }, {
         "question": "Pick A City",
         "answer1": "Cleveland",
-        "answer1Total": "2",
+        "answer1Total": "1",
         "answer2": "Chicago",
-        "answer2Total": "1",
+        "answer2Total": "2",
         "answer3": "Los Angeles",
         "answer3Total": "3",
         "answer4": "San Antonio",
@@ -77,13 +77,13 @@ const questions = [
     }, {
         "question": "What are you afraid of?",
         "answer1": "Failure",
-        "answer1Total": "2",
+        "answer1Total": "1",
         "answer2": "Water",
-        "answer2Total": "1",
-        "answer3": "Bacteria",
-        "answer3Total": "3",
-        "answer4": "Heights",
-        "answer4Total": "4"
+        "answer2Total": "2",
+        "answer3": "Heights",
+        "answer3Total": "4",
+        "answer4": "Bacteria",
+        "answer4Total": "3"
     }
 ];
 
@@ -203,7 +203,7 @@ function playAudio() {
     } else if (mainQuestion == totalQuestions) {
         audio = new Audio("./assets/congrats.mp3");
         audio.play();
-        
+
         stopTheme();
         endSong.play()
     }
@@ -258,7 +258,7 @@ function createQuestions(index){
 
 //.. move on to the next question when next button clicked
 function nextQuestion(){
-    let userChoice = document.querySelector('div input[type="radio"]:checked');
+    let userChoice = document.querySelector('input[type="radio"]:checked');
     
     if (!userChoice) {
         alert(`If you dont answer, you will be benched!`);
@@ -391,3 +391,87 @@ mj.addEventListener('click', playVoice2)
 
 createQuestions(mainQuestion);
 
+// const questions = [
+//     {
+//         "question": "What is your favourite food?",
+//         "answer1": "Tacos",
+//         "answer1Total": "1",
+//         "answer2": "Steak",
+//         "answer2Total": "2",
+//         "answer3": "Fish",
+//         "answer3Total": "3",
+//         "answer4": "Shrimp",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "What is your favourite shoes?",
+//         "answer1": "Nike",
+//         "answer1Total": "1",
+//         "answer2": "Air Jordans",
+//         "answer2Total": "2",
+//         "answer3": "Converse",
+//         "answer3Total": "3",
+//         "answer4": "Adidas",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "What is your favourite color?",
+//         "answer1": "Navy Blue",
+//         "answer1Total": "1",
+//         "answer2": "Deep Red",
+//         "answer2Total": "2",
+//         "answer3": "Yellow",
+//         "answer3Total": "3",
+//         "answer4": "Grey",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "Ten seconds on the clock, what are you doing?",
+//         "answer1": "Making the Game Winning Play",
+//         "answer1Total": "1",
+//         "answer2": "Shooting the Game Winning shot",
+//         "answer2Total": "2",
+//         "answer3": "Passing an alley-oop to win the game ",
+//         "answer3Total": "3",
+//         "answer4": "Dribbling ball for easy backboard shot",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "You just got the game winning shot, how do you celebrate?",
+//         "answer1": "Beat your chest, angrily",
+//         "answer1Total": "1",
+//         "answer2": "Stick your tongue out, with emphasis",
+//         "answer2Total": "2",
+//         "answer3": "Raising a hand up, running down the court",
+//         "answer3Total": "3",
+//         "answer4": "Remain silent, being humble",
+//         "answer4Total": "4"
+//     }
+//     , {
+//         "question": "On your day off, what do you like to do?",
+//         "answer1": "Workout and exercise",
+//         "answer1Total": "2",
+//         "answer2": "Play relaxing sports",
+//         "answer2Total": "1",
+//         "answer3": "Watch Tv",
+//         "answer3Total": "3",
+//         "answer4": "Board Games",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "Pick A City",
+//         "answer1": "Cleveland",
+//         "answer1Total": "2",
+//         "answer2": "Chicago",
+//         "answer2Total": "1",
+//         "answer3": "Los Angeles",
+//         "answer3Total": "3",
+//         "answer4": "San Antonio",
+//         "answer4Total": "4"
+//     }, {
+//         "question": "What are you afraid of?",
+//         "answer1": "Failure",
+//         "answer1Total": "2",
+//         "answer2": "Water",
+//         "answer2Total": "1",
+//         "answer3": "Bacteria",
+//         "answer3Total": "3",
+//         "answer4": "Heights",
+//         "answer4Total": "4"
+//     }
+// ];
