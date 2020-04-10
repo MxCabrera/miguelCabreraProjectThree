@@ -5,6 +5,9 @@
     // body {
     //     background: red;
     // }
+    .resultBox img {
+        width: 90%;
+    }
     .bubble {
         bottom: 19rem;
     }
@@ -18,20 +21,22 @@
     //     background: green;
 
     // }
-    .mainTitle {
-        margin-top: 2rem;
-    }
-    .strongGoat {
-        width: 55%;
+    // .strongGoat {
+    //     width: 55%;
+    // }
+    .tim {
+        margin: -7rem 5rem 0rem -10rem;
     }
     .goatAcronym {
         margin-top: 1rem;
     }
-    .lebron,
-    .jordan {
-        width: 45%;
-        height: 75%;
-        position: center;
+    .bubble {
+        bottom: 19rem;
+        right: 3rem;
+    }
+    .smallBubble {
+        right: 8rem;
+        bottom: 18rem;
     }
     .title {
         font-size: 3rem;
@@ -54,11 +59,21 @@
     // body {
     //     background: yellow;
     // }
+    .earvin {
+    margin-right: -1rem;
+    margin-left: 4rem;
+    }
+    .jordan {
+        margin-left: -1rem;
+    }
+    .tim {
+        margin: -7rem 2rem 0rem -6rem;
+    }
     .bubble {
-        bottom: 18rem;
+        right: 0rem;
     }
     .smallBubble {
-        bottom: 17rem;
+        right: 5rem;
     }
     .quizBox,
     .resultBox1,
@@ -92,6 +107,9 @@
     }
     .goatAcronym {
         font-size: 2.3rem;
+    }
+    .tim {
+        margin: -4rem 2rem 0rem -4rem;
     }
     .bubble {
         bottom: 16rem;
@@ -133,6 +151,9 @@
         font-size: 5rem;
         margin-bottom: 1rem;
     }
+    .goatAcronym {
+        font-size: 2rem;
+    }
     .strongGoat {
         margin-top: 2rem;
     }
@@ -143,10 +164,10 @@
         margin-left: -2rem;
     }
     .bubble {
-        bottom: -3rem;
+        bottom: 12rem;
     }
     .smallBubble {
-        bottom: 0rem;
+        bottom: 11rem;
     }
     .question {
         font-size: 1.7rem;
@@ -194,42 +215,66 @@
     }
 }
 
+@media (max-width: 640px) {
+    .goatAcronym {
+        font-size: 1.6rem;
+        margin-top: 0;
+    }
+    .earvin {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .tim {
+        margin: -3rem -1rem 0rem -2rem;
+    }
+    .jordan {
+        margin-left: -2rem;
+    }
+    .lebron, 
+    .jordan {
+        width: 32%;
+        height: 83%;
+    }
+    .smallBubble {
+        right: 1rem;
+    }
+    .titleButton {
+        margin-top: 1rem;
+    }
+}
+
 @media (max-width: 500px) {
     // body {
     //     background: pink;
     // }
     .mainTitle {
         font-size: 4.5rem;
-        margin-top: 0;
-    }
-    .goatAcronym {
-        font-size: 1.8rem;
     }
     .strongGoat {
         display: none;
     }
-    .lebron {
-        margin-right: -3rem;
+    .earvin {
+        width: 23%;
     }
     .jordan {
-        margin-right: 2rem;
+        margin-left: -1rem;
     }
-    .lebron,
-    .jordan {
-        width: 55%;
-        height: 80%;
-        position: center;
+    .tim {
+        width: 51%;
     }
+
     .bubble {
-        bottom: 12rem;
-        right: -1rem
+        bottom: -4rem;
+        right: -1rem;
     }
     .smallBubble {
-        bottom: 12rem;
+        bottom: -1.5rem;
         right: 4.5rem;
     }
     .titleButton {
         font-size: 1.2rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
     }
     .quizBox {
         padding: 2rem;
@@ -279,26 +324,43 @@
     // body {
     //     background: brown;
     // }
+    .wrapper {
+        padding: 2rem 0.5rem;
+    }
     .mainTitle {
         font-size: 3.2rem;
     }
     .goatAcronym {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .earvin {
+        display: none;
+        // width: 25%;
     }
     .lebron {
-        margin-right: -2rem;
+        margin-right: -3rem;
+        margin-left: 2rem;
     }
     .jordan {
         margin-right: 1rem;
+        margin-left: 0rem;
+    }
+    .lebron, .jordan {
+        width: 100%;
+        height: 100%;
+    }
+    .tim {
+        display: none;
+        // margin: -1rem -1rem 0rem -3rem;
     }
     .bubble {
         font-size: 0.8rem;
-        bottom: -1rem;
-        right: -1.5rem
+        bottom: -3rem;
+        right: 1rem;
     }
     .smallBubble {
-        bottom: 1rem;
-        right: 3rem;
+        bottom: 0.5rem;
+        right: 2rem;
     }
     .title {
         font-size: 2rem;

@@ -43,7 +43,7 @@ body {
     text-align: center;
     font-size: 7rem;
     color: $color-one;
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-bottom: 0;
     font-weight: 300;
     text-shadow: 2px 2px 2px #000;
@@ -84,14 +84,23 @@ body {
     margin-right: -3rem;
 }
 .jordan {
-    margin-left: -2rem;
+    margin-left: -3rem;
 }
 
+.earvin {
+    margin-right: -2rem;
+    margin-left: 4rem;
+    width: 19%;
+}
+.tim {
+width: 40%;
+border-radius: 30%;
+margin: -7rem 3rem 0rem -10rem;
+}
 .lebron,
 .jordan {
-    width: 35%;
-    height: 65%;
-    position: center;
+    width: 25%;
+    height: 66%;
 }
 
 
@@ -381,6 +390,8 @@ button.previous {
 
 .youtube {
     font-size: 1.5rem;
+    background: rgba(255, 255, 0, 0.3);
+    border-radius: 0.3rem;
 }
 .youtube a {
     color: black;
@@ -398,6 +409,7 @@ button.previous {
     letter-spacing: 1.2px;
     padding: 0.5rem;
     color: $color-four;
+    background: rgba(255,255,255,0.5);
     margin: 1rem auto;
 }
 

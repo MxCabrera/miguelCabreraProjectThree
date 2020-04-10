@@ -4,7 +4,17 @@
 const playerInfo = {};
 const questions = [
     {
-        "question": "What is your favourite food?",
+        "question": "What is your favourite shoes?",
+        "answer1": "Nike",
+        "answer1Total": "1",
+        "answer2": "Converse",
+        "answer2Total": "3",
+        "answer3": "Air Jordan",
+        "answer3Total": "2",
+        "answer4": "Adidas",
+        "answer4Total": "4"
+    }, {
+        "question": "Choose one food to eat for a year?",
         "answer1": "Fish",
         "answer1Total": "3",
         "answer2": "Steak",
@@ -14,38 +24,28 @@ const questions = [
         "answer4": "Shrimp",
         "answer4Total": "4"
     }, {
-        "question": "What is your favourite shoes?",
-        "answer1": "Nike",
-        "answer1Total": "1",
-        "answer2": "Air Jordans",
-        "answer2Total": "2",
-        "answer3": "Converse",
-        "answer3Total": "3",
-        "answer4": "Adidas",
-        "answer4Total": "4"
-    }, {
-        "question": "What is your favourite color?",
+        "question": "Pick a color",
         "answer1": "Grey",
         "answer1Total": "4",
-        "answer2": "Deep Red",
+        "answer2": "Red",
         "answer2Total": "2",
         "answer3": "Yellow",
         "answer3Total": "3",
-        "answer4": "Navy Blue",
+        "answer4": "Blue",
         "answer4Total": "1",
     }, {
-        "question": "Ten seconds on the clock, what are you doing?",
+        "question": "Ten seconds on the clock! What are you doing?",
         "answer1": "Shooting the game-winning shot",
         "answer1Total": "2",
-        "answer2": "Dribbling ball for easy backboard shot",
+        "answer2": "Power through for a backboard shot",
         "answer2Total": "4",
-        "answer3": "Making the game-winning play",
+        "answer3": "Dunking the game-winning play",
         "answer3Total": "1",
         "answer4": "Passing an alley-oop to win the game ",
         "answer4Total": "3"
     }, {
-        "question": "You just got the game winning shot, how do you celebrate?",
-        "answer1": "Raising a hand up running down the court",
+        "question": "You just got the game winning shot! How do you celebrate?",
+        "answer1": "Raised fist running down the court",
         "answer1Total": "3",
         "answer2": "Beating your chest angrily",
         "answer2Total": "1",
@@ -55,25 +55,25 @@ const questions = [
         "answer4Total": "4"
     }
     , {
-        "question": "On your day off, what do you like to do?",
-        "answer1": "Workout and exercise",
+        "question": "It's your day off! What do you like to do?",
+        "answer1": "Play relaxing sports",
         "answer1Total": "2",
-        "answer2": "Play relaxing sports",
+        "answer2": "Workout and exercise",
         "answer2Total": "1",
-        "answer3": "Watch TV",
+        "answer3": "Watch television",
         "answer3Total": "3",
         "answer4": "Enjoy board Games",
         "answer4Total": "4"
     }, {
-        "question": "Pick A City",
-        "answer1": "Cleveland",
+        "question": "Pick A State",
+        "answer1": "Ohio",
         "answer1Total": "1",
-        "answer2": "Chicago",
-        "answer2Total": "2",
-        "answer3": "Los Angeles",
+        "answer2": "Texas",
+        "answer2Total": "4",
+        "answer3": "California",
         "answer3Total": "3",
-        "answer4": "San Antonio",
-        "answer4Total": "4"
+        "answer4": "Illinois",
+        "answer4Total": "2"
     }, {
         "question": "What are you afraid of?",
         "answer1": "Failure",
@@ -178,6 +178,8 @@ const previousButton = document.querySelector('.previous');
 const results = document.querySelector('.results');
 const lbj = document.querySelector('.lebron');
 const mj = document.querySelector('.jordan');
+const tim = document.querySelector('.tim');
+const earvin = document.querySelector('.earvin');
 const themeSong = new Audio("./assets/themeSong.mp3");
 const endSong = new Audio("./assets/results.mp3");
 
@@ -215,10 +217,19 @@ function playVoice1() {
 }
 
 function playVoice2() {
-    audio = new Audio('./assets/jordanV.mp3');
+    audio = new Audio('./assets/bestPlayer.mp3');
     audio.play();
 }
 
+function playVoice3() {
+    audio = new Audio('./assets/earvinV5.mp3');
+    audio.play();
+}
+
+function playVoice4() {
+    audio = new Audio('./assets/timV.mp3');
+    audio.play();
+}
 
 // when user clicks the start quiz button
 function beginQuiz() {
@@ -345,7 +356,7 @@ function nextQuestion(){
                 <p class="highlight">${pInfo}</p>
                 <h3>Career Statistics: (Per Game Average)</h3>
                 <p class="statsInfo">${pStats}</p>
-                <span class="youtube">click the photo for ${pName} highlights! |   <a href="http://mcabrera.ca">My Portfolio</a></span>
+                <span class="youtube">*click the photo for ${pName} highlights! |   <a href="http://mcabrera.ca">My Portfolio</a></span>
             </div>
             <button class="restart"> Restart </button>`
         playAudio();
@@ -386,8 +397,13 @@ results.addEventListener('click', resetQuiz);
 previousButton.addEventListener('click', previousQuestion);
 nextButton.addEventListener('click', nextQuestion);
 startQuiz.addEventListener('click', beginQuiz);
-lbj.addEventListener('click', playVoice1)
-mj.addEventListener('click', playVoice2)
+
+// Audio Event Listeners
+lbj.addEventListener('click', playVoice1);
+mj.addEventListener('click', playVoice2);
+tim.addEventListener('click', playVoice4);
+earvin.addEventListener('click', playVoice3);
+
 
 createQuestions(mainQuestion);
 
