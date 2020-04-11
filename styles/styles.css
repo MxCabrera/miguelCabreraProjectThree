@@ -285,12 +285,14 @@ body {
   text-align: center;
   font-size: 7rem;
   color: #C9082A;
-  margin-top: 0rem;
-  margin-bottom: 0;
+  width: 82%;
+  margin: 0 auto;
   font-weight: 300;
-  text-shadow: 2px 2px 2px #000;
+  text-shadow: 2px 2px 2px black;
   -webkit-animation: chill 1s;
           animation: chill 1s;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
 }
 
 @-webkit-keyframes chill {
@@ -633,15 +635,15 @@ body {
   right: 0;
   bottom: 25rem;
   color: #000;
-  background: #ffffff70;
-  border-radius: 25%;
+  background: #ffffff98;
+  border-radius: 25px;
 }
 
 .smallBubble {
   position: absolute;
   right: 5rem;
   bottom: 23rem;
-  background: #ffffff70;
+  background: #ffffff98;
   color: rgba(0, 0, 0, 0);
   border-radius: 35%;
 }
@@ -670,7 +672,7 @@ body {
   min-height: 80vh;
   margin: auto;
   padding: 3rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -687,11 +689,14 @@ body {
 .title {
   color: #4d4d4d;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 3rem;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 10px;
+  font-family: 'BioRhyme', serif;
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .question {
@@ -706,7 +711,7 @@ body {
   margin: 0 auto;
   text-align: start;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
 }
 
@@ -716,7 +721,7 @@ body {
 }
 
 .choice:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .mainButtons > * {
@@ -1161,8 +1166,12 @@ button.restart:hover {
     width: 32%;
     height: 83%;
   }
+  .bubble {
+    bottom: 11rem;
+  }
   .smallBubble {
-    right: 1rem;
+    right: 0.5rem;
+    bottom: 9.5rem;
   }
   .titleButton {
     margin-top: 1rem;
@@ -1247,6 +1256,7 @@ button.restart:hover {
   }
   .mainTitle {
     font-size: 3.2rem;
+    width: 100%;
   }
   .goatAcronym {
     font-size: 1.3rem;

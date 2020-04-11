@@ -235,8 +235,12 @@
         width: 32%;
         height: 83%;
     }
+    .bubble {
+        bottom: 11rem;
+    }
     .smallBubble {
-        right: 1rem;
+        right: 0.5rem;
+        bottom: 9.5rem;
     }
     .titleButton {
         margin-top: 1rem;
@@ -329,6 +333,7 @@
     }
     .mainTitle {
         font-size: 3.2rem;
+        width: 100%;
     }
     .goatAcronym {
         font-size: 1.3rem;
