@@ -1198,6 +1198,9 @@ button.restart:hover {
   .strongGoat {
     display: none;
   }
+  .imgDiv2 {
+    width: 25%;
+  }
   .bubble {
     bottom: -4rem;
     right: -1rem;
@@ -1255,6 +1258,9 @@ button.restart:hover {
 }
 
 @media (max-width: 400px) {
+  .imgDiv2 {
+    width: 50%;
+  }
   .wrapper {
     padding: 2rem 0.5rem;
   }
@@ -1264,6 +1270,12 @@ button.restart:hover {
   }
   .goatAcronym {
     font-size: 1.3rem;
+  }
+  .myDiv1,
+  .imgHeader1,
+  .myDiv3,
+  .imgHeader4 {
+    display: none;
   }
   .bubble {
     font-size: 0.8rem;
