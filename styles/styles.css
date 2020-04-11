@@ -384,30 +384,37 @@ body {
   width: 40%;
 }
 
-.lebron {
+.imgDiv1 {
+  width: 20%;
+}
+
+.imgDiv2 {
+  width: 20%;
+}
+
+.imgDiv3 {
+  width: 30%;
+}
+
+.imgHeader1 {
+  width: 70%;
   margin-right: -3rem;
 }
 
-.jordan {
-  margin-left: -3rem;
+.imgHeader2 {
+  width: 90%;
+  margin-right: -4rem;
 }
 
-.earvin {
-  margin-right: -2rem;
-  margin-left: 4rem;
-  width: 19%;
+.imgHeader3 {
+  width: 90%;
+  margin-left: -8rem;
 }
 
-.tim {
-  width: 40%;
-  border-radius: 30%;
-  margin: -7rem 3rem 0rem -10rem;
-}
-
-.lebron,
-.jordan {
-  width: 25%;
-  height: 66%;
+.imgHeader4 {
+  width: 100%;
+  margin-left: -15rem;
+  margin-top: -5rem;
 }
 
 .shakes {
@@ -627,6 +634,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  width: 100%;
 }
 
 .bubble {
@@ -655,7 +663,7 @@ body {
   border-radius: 10px;
   padding: 1rem;
   text-transform: uppercase;
-  margin-top: -1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -952,6 +960,9 @@ button.restart:hover {
 }
 
 @media (max-width: 1400px) {
+  .imgHeader3 {
+    margin-left: -7rem;
+  }
   .resultBox img {
     width: 90%;
   }
@@ -964,11 +975,24 @@ button.restart:hover {
 }
 
 @media (max-width: 1200px) {
-  .tim {
-    margin: -7rem 5rem 0rem -10rem;
-  }
   .goatAcronym {
     margin-top: 1rem;
+  }
+  .imgHeader1 {
+    margin-right: -2rem;
+  }
+  .imgHeader2,
+  .imgHeader3 {
+    width: 100%;
+  }
+  .imgHeader2 {
+    margin-right: -2rem;
+  }
+  .imgHeader3 {
+    margin-left: -4rem;
+  }
+  .imgHeader4 {
+    margin-left: -12rem;
   }
   .bubble {
     bottom: 19rem;
@@ -996,15 +1020,15 @@ button.restart:hover {
 }
 
 @media (max-width: 1000px) {
-  .earvin {
-    margin-right: -1rem;
-    margin-left: 4rem;
+  .goatAcronym {
+    margin-bottom: 2rem;
   }
-  .jordan {
-    margin-left: -1rem;
+  .imgHeader1 {
+    margin-right: 2rem;
   }
-  .tim {
-    margin: -7rem 2rem 0rem -6rem;
+  .imgHeader4 {
+    margin-left: -5rem;
+    margin-top: -2rem;
   }
   .bubble {
     right: 0rem;
@@ -1042,8 +1066,15 @@ button.restart:hover {
   .goatAcronym {
     font-size: 2.3rem;
   }
-  .tim {
-    margin: -4rem 2rem 0rem -4rem;
+  .imgHeader2 {
+    margin-right: -2rem;
+  }
+  .imgHeader3 {
+    margin-left: -1rem;
+  }
+  .imgHeader2,
+  .imgHeader3 {
+    width: 120%;
   }
   .bubble {
     bottom: 16rem;
@@ -1053,7 +1084,6 @@ button.restart:hover {
   }
   .titleButton {
     font-size: 1.8rem;
-    margin-top: 0;
   }
   .title {
     margin-bottom: 1rem;
@@ -1085,14 +1115,8 @@ button.restart:hover {
   .goatAcronym {
     font-size: 2rem;
   }
-  .strongGoat {
-    margin-top: 2rem;
-  }
-  .lebron {
-    margin-right: -1rem;
-  }
-  .jordan {
-    margin-left: -2rem;
+  .imgHeader4 {
+    margin-left: -1rem;
   }
   .bubble {
     bottom: 12rem;
@@ -1155,17 +1179,6 @@ button.restart:hover {
     margin-right: 0rem;
     margin-left: 0rem;
   }
-  .tim {
-    margin: -3rem -1rem 0rem -2rem;
-  }
-  .jordan {
-    margin-left: -2rem;
-  }
-  .lebron,
-  .jordan {
-    width: 32%;
-    height: 83%;
-  }
   .bubble {
     bottom: 11rem;
   }
@@ -1184,15 +1197,6 @@ button.restart:hover {
   }
   .strongGoat {
     display: none;
-  }
-  .earvin {
-    width: 23%;
-  }
-  .jordan {
-    margin-left: -1rem;
-  }
-  .tim {
-    width: 51%;
   }
   .bubble {
     bottom: -4rem;
@@ -1260,24 +1264,6 @@ button.restart:hover {
   }
   .goatAcronym {
     font-size: 1.3rem;
-  }
-  .earvin {
-    display: none;
-  }
-  .lebron {
-    margin-right: -3rem;
-    margin-left: 2rem;
-  }
-  .jordan {
-    margin-right: 1rem;
-    margin-left: 0rem;
-  }
-  .lebron, .jordan {
-    width: 100%;
-    height: 100%;
-  }
-  .tim {
-    display: none;
   }
   .bubble {
     font-size: 0.8rem;

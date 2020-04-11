@@ -5,6 +5,9 @@
     // body {
     //     background: red;
     // }
+    .imgHeader3 {
+        margin-left: -7rem;
+    }
     .resultBox img {
         width: 90%;
     }
@@ -19,16 +22,24 @@
 @media (max-width: 1200px) {
     // body {
     //     background: green;
-
-    // }
-    // .strongGoat {
-    //     width: 55%;
-    // }
-    .tim {
-        margin: -7rem 5rem 0rem -10rem;
-    }
     .goatAcronym {
         margin-top: 1rem;
+    }
+    .imgHeader1 {
+        margin-right: -2rem;
+    }
+    .imgHeader2,
+    .imgHeader3 {
+        width: 100%;
+    }
+    .imgHeader2 {
+        margin-right: -2rem;
+    }
+    .imgHeader3 {
+        margin-left: -4rem;
+    }
+    .imgHeader4 {
+        margin-left: -12rem;
     }
     .bubble {
         bottom: 19rem;
@@ -59,15 +70,15 @@
     // body {
     //     background: yellow;
     // }
-    .earvin {
-    margin-right: -1rem;
-    margin-left: 4rem;
+    .goatAcronym {
+        margin-bottom: 2rem;
     }
-    .jordan {
-        margin-left: -1rem;
+    .imgHeader1 {
+        margin-right: 2rem;
     }
-    .tim {
-        margin: -7rem 2rem 0rem -6rem;
+    .imgHeader4 {
+        margin-left: -5rem;
+        margin-top: -2rem;
     }
     .bubble {
         right: 0rem;
@@ -108,8 +119,15 @@
     .goatAcronym {
         font-size: 2.3rem;
     }
-    .tim {
-        margin: -4rem 2rem 0rem -4rem;
+    .imgHeader2 {
+        margin-right: -2rem;
+    }
+    .imgHeader3 {
+        margin-left: -1rem;
+    }
+    .imgHeader2,
+    .imgHeader3 {
+        width: 120%;
     }
     .bubble {
         bottom: 16rem;
@@ -119,7 +137,6 @@
     }
     .titleButton {
         font-size: 1.8rem;
-        margin-top: 0;
     }
     .title {
         margin-bottom: 1rem;
@@ -154,14 +171,8 @@
     .goatAcronym {
         font-size: 2rem;
     }
-    .strongGoat {
-        margin-top: 2rem;
-    }
-    .lebron {
-        margin-right: -1rem;
-    }
-    .jordan {
-        margin-left: -2rem;
+    .imgHeader4 {
+        margin-left: -1rem;
     }
     .bubble {
         bottom: 12rem;
@@ -224,17 +235,6 @@
         margin-right: 0rem;
         margin-left: 0rem;
     }
-    .tim {
-        margin: -3rem -1rem 0rem -2rem;
-    }
-    .jordan {
-        margin-left: -2rem;
-    }
-    .lebron, 
-    .jordan {
-        width: 32%;
-        height: 83%;
-    }
     .bubble {
         bottom: 11rem;
     }
@@ -257,16 +257,6 @@
     .strongGoat {
         display: none;
     }
-    .earvin {
-        width: 23%;
-    }
-    .jordan {
-        margin-left: -1rem;
-    }
-    .tim {
-        width: 51%;
-    }
-
     .bubble {
         bottom: -4rem;
         right: -1rem;
@@ -337,26 +327,6 @@
     }
     .goatAcronym {
         font-size: 1.3rem;
-    }
-    .earvin {
-        display: none;
-        // width: 25%;
-    }
-    .lebron {
-        margin-right: -3rem;
-        margin-left: 2rem;
-    }
-    .jordan {
-        margin-right: 1rem;
-        margin-left: 0rem;
-    }
-    .lebron, .jordan {
-        width: 100%;
-        height: 100%;
-    }
-    .tim {
-        display: none;
-        // margin: -1rem -1rem 0rem -3rem;
     }
     .bubble {
         font-size: 0.8rem;
