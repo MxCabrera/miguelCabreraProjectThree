@@ -42,12 +42,12 @@
         margin-left: -12rem;
     }
     .bubble {
-        bottom: 19rem;
+        bottom: 16rem;
         right: 3rem;
     }
     .smallBubble {
         right: 8rem;
-        bottom: 18rem;
+        bottom: 15rem;
     }
     .title {
         font-size: 3rem;
@@ -130,10 +130,10 @@
         width: 120%;
     }
     .bubble {
-        bottom: 16rem;
+        bottom: 13rem;
     }
     .smallBubble {
-        bottom: 15rem;
+        bottom: 12rem;
     }
     .titleButton {
         font-size: 1.8rem;
@@ -173,6 +173,9 @@
     }
     .imgHeader4 {
         margin-left: -1rem;
+    }
+    .imgDiv2 {
+        width: 25%;
     }
     .bubble {
         bottom: 12rem;
@@ -257,9 +260,6 @@
     .strongGoat {
         display: none;
     }
-    .imgDiv2 {
-        width: 25%;
-    }
     .bubble {
         bottom: -4rem;
         right: -1rem;
@@ -321,9 +321,6 @@
     // body {
     //     background: brown;
     // }
-    .imgDiv2 {
-        width: 50%;
-    }
     .wrapper {
         padding: 2rem 0.5rem;
     }
@@ -339,6 +336,9 @@
     .myDiv3,
     .imgHeader4 { 
         display: none;
+    }
+    .imgDiv2 {
+        width: 50%;
     }
     .bubble {
         font-size: 0.8rem;

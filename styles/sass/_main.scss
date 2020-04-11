@@ -6,7 +6,6 @@ body {
     background-size: contain;
     background-repeat: repeat-y;
     background-color: $color-four;
-
 }
 
 .wrapper {
@@ -165,8 +164,8 @@ body {
 .bubble {
     padding: 1rem;
     position: absolute;
-    right: 0;
-    bottom: 25rem;
+    right: 4rem;
+    bottom: 20rem;
     color: $color-four;
     background: #ffffff98;;
     border-radius: 25px;
@@ -174,8 +173,8 @@ body {
 
 .smallBubble {
     position: absolute;
-    right: 5rem;
-    bottom: 23rem;
+    right: 10rem;
+    bottom: 19rem;
     background: #ffffff98;
     color: rgba(0,0,0,0);
     border-radius: 35%;
@@ -408,9 +407,10 @@ button.previous {
     background: rgba(255, 255, 0, 0.3);
     border-radius: 0.3rem;
 }
-.youtube a {
+.portfolio {
     color: black;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 .youtube a:hover {

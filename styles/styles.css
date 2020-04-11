@@ -640,8 +640,8 @@ body {
 .bubble {
   padding: 1rem;
   position: absolute;
-  right: 0;
-  bottom: 25rem;
+  right: 4rem;
+  bottom: 20rem;
   color: #000;
   background: #ffffff98;
   border-radius: 25px;
@@ -649,8 +649,8 @@ body {
 
 .smallBubble {
   position: absolute;
-  right: 5rem;
-  bottom: 23rem;
+  right: 10rem;
+  bottom: 19rem;
   background: #ffffff98;
   color: rgba(0, 0, 0, 0);
   border-radius: 35%;
@@ -890,9 +890,10 @@ button.previous {
   border-radius: 0.3rem;
 }
 
-.youtube a {
+.portfolio {
   color: black;
   text-decoration: none;
+  font-size: 1.5rem;
 }
 
 .youtube a:hover {
@@ -995,12 +996,12 @@ button.restart:hover {
     margin-left: -12rem;
   }
   .bubble {
-    bottom: 19rem;
+    bottom: 16rem;
     right: 3rem;
   }
   .smallBubble {
     right: 8rem;
-    bottom: 18rem;
+    bottom: 15rem;
   }
   .title {
     font-size: 3rem;
@@ -1077,10 +1078,10 @@ button.restart:hover {
     width: 120%;
   }
   .bubble {
-    bottom: 16rem;
+    bottom: 13rem;
   }
   .smallBubble {
-    bottom: 15rem;
+    bottom: 12rem;
   }
   .titleButton {
     font-size: 1.8rem;
@@ -1117,6 +1118,9 @@ button.restart:hover {
   }
   .imgHeader4 {
     margin-left: -1rem;
+  }
+  .imgDiv2 {
+    width: 25%;
   }
   .bubble {
     bottom: 12rem;
@@ -1198,9 +1202,6 @@ button.restart:hover {
   .strongGoat {
     display: none;
   }
-  .imgDiv2 {
-    width: 25%;
-  }
   .bubble {
     bottom: -4rem;
     right: -1rem;
@@ -1258,9 +1259,6 @@ button.restart:hover {
 }
 
 @media (max-width: 400px) {
-  .imgDiv2 {
-    width: 50%;
-  }
   .wrapper {
     padding: 2rem 0.5rem;
   }
@@ -1276,6 +1274,9 @@ button.restart:hover {
   .myDiv3,
   .imgHeader4 {
     display: none;
+  }
+  .imgDiv2 {
+    width: 50%;
   }
   .bubble {
     font-size: 0.8rem;

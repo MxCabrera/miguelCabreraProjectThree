@@ -356,7 +356,7 @@ function nextQuestion(){
                 <p class="highlight">${pInfo}</p>
                 <h3>Career Statistics: (Per Game Average)</h3>
                 <p class="statsInfo">${pStats}</p>
-                <span class="youtube">*click the photo for ${pName} highlights! |   <a href="http://mcabrera.ca">My Portfolio</a></span>
+                <span class="youtube">*click the photo for ${pName} highlights! </span>   <a class="portfolio" href="http://mcabrera.ca">| My Portfolio</a>
             </div>
             <button class="restart"> Restart </button>`
         playAudio();
