@@ -405,3 +405,6 @@ lbj.addEventListener('click', playVoice1);
 mj.addEventListener('click', playVoice2);
 tim.addEventListener('click', playVoice4);
 earvin.addEventListener('click', playVoice3);
+
+// - when page loads, call createQuestion function to populate information to DOM - 
+createQuestions(mainQuestion);
