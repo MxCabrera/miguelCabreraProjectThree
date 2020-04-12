@@ -183,8 +183,8 @@ const lbj = document.querySelector('.lebron');
 const mj = document.querySelector('.jordan');
 const tim = document.querySelector('.tim');
 const earvin = document.querySelector('.earvin');
-const themeSong = new Audio("./assets/themeSong.mp3");
-const endSong = new Audio("./assets/results.mp3");
+const themeSong = new Audio("./assets/audio/themeSong.mp3");
+const endSong = new Audio("./assets/audio/results.mp3");
 
 // - play the audio with these functions - 
 function playTheme() {
@@ -196,19 +196,19 @@ function stopTheme() {
 
 // - function to store several audio files into a function, waiting for call  - 
 function playVoice1() {
-    audio = new Audio('./assets/lebronV.mp3');
+    audio = new Audio('./assets/audio/lebronV.mp3');
     audio.play();
 };
 function playVoice2() {
-    audio = new Audio('./assets/bestPlayer.mp3');
+    audio = new Audio('./assets/audio/bestPlayer.mp3');
     audio.play();
 };
 function playVoice3() {
-    audio = new Audio('./assets/earvinV5.mp3');
+    audio = new Audio('./assets/audio/earvinV5.mp3');
     audio.play();
 };
 function playVoice4() {
-    audio = new Audio('./assets/timV.mp3');
+    audio = new Audio('./assets/audio/timV.mp3');
     audio.play();
 };
 
@@ -217,11 +217,11 @@ function playAudio() {
     let audio;
     // - if user is not at the end of quiz, play buckets audio - 
     if (mainQuestion !== totalQuestions) {
-        audio = new Audio("./assets/bucket.mp3");
+        audio = new Audio("./assets/audio/bucket.mp3");
         audio.play();
         // if user is completed all questions, play congrats audio - 
     } else if (mainQuestion == totalQuestions) {
-        audio = new Audio("./assets/congrats.mp3");
+        audio = new Audio("./assets/audio/congrats.mp3");
         audio.play();
         // - stop theme song audio -
         stopTheme();
@@ -232,17 +232,15 @@ function playAudio() {
 
 
 
-
-
-// - function for when user clicks the start quiz button, - 
+// - function for when user clicks the start quiz button: hide header, display quizBox, populate questions/answer to DOM, play theme song - 
 function beginQuiz() {
     if (startQuiz) {
         header.style.display = 'none';
         quiz.style.display = 'block';
+        createQuestions(mainQuestion);
         playTheme();
     }
 };
-
 
 
 
@@ -356,7 +354,7 @@ function nextQuestion() {
                 <p class="highlight">${pInfo}</p>
                 <h3>Career Statistics: (Per Game Average)</h3>
                 <p class="statsInfo">${pStats}</p>
-                <span class="youtube">*click the photo for ${pName} highlights! </span>   <a class="portfolio" href="http://mcabrera.ca">| My Portfolio</a>
+                <span class="youtube">*click the photo for ${pName} highlights!* </span>   <a class="portfolio" href="http://mcabrera.ca">| MyPortfolio</a>
             </div>
             <button class="restart"> Restart </button>`
         // - when results have been displayed, play audio function - 
@@ -405,6 +403,3 @@ lbj.addEventListener('click', playVoice1);
 mj.addEventListener('click', playVoice2);
 tim.addEventListener('click', playVoice4);
 earvin.addEventListener('click', playVoice3);
-
-// - when page loads, call createQuestion function to populate information to DOM - 
-createQuestions(mainQuestion);

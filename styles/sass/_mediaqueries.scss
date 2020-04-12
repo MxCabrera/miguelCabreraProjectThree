@@ -2,14 +2,8 @@
 
 
 @media (max-width: 1400px) {
-    // body {
-    //     background: red;
-    // }
     .imgHeader3 {
         margin-left: -7rem;
-    }
-    .resultBox img {
-        width: 90%;
     }
     .bubble {
         bottom: 19rem;
@@ -17,11 +11,18 @@
     .smallBubble {
         bottom: 18rem;
     }
+    .resultBox img {
+        width: 90%;
+    }
 }
 
+
+
+
+// - media query 1200 px -
+
+
 @media (max-width: 1200px) {
-    // body {
-    //     background: green;
     .goatAcronym {
         margin-top: 1rem;
     }
@@ -66,10 +67,13 @@
     }
 }
 
+
+
+
+// - media query 1000 px -
+
+
 @media (max-width: 1000px) {
-    // body {
-    //     background: yellow;
-    // }
     .goatAcronym {
         margin-bottom: 2rem;
     }
@@ -108,10 +112,14 @@
     }
 }
 
+
+
+
+
+// - media query 900 px -
+
+
 @media (max-width: 900px) {
-    // body {
-    //     background: purple;
-    // }
     .mainTitle {
         font-size: 6.5rem;
         margin-bottom: 1rem;
@@ -160,10 +168,14 @@
     }
 }
 
+
+
+
+
+// - media query 768 px -
+
+
 @media (max-width: 768px) {
-    // body {
-    //     background: orange;
-    // }
     .mainTitle {
         font-size: 5rem;
         margin-bottom: 1rem;
@@ -171,11 +183,17 @@
     .goatAcronym {
         font-size: 2rem;
     }
-    .imgHeader4 {
-        margin-left: -1rem;
+    .titleButton {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2.5rem;
     }
     .imgDiv2 {
-        width: 25%;
+    width: 25%;
+    }
+    .imgHeader4 {
+        margin-left: -1rem;
     }
     .bubble {
         bottom: 12rem;
@@ -193,14 +211,14 @@
     font-size: 1.2rem;
     padding: 0.5rem 1.2rem;
     }
-    .titleButton {
-        font-size: 1.5rem;
+    .mainButtons > * {
+        margin: 0.5rem;
     }
-    .title {
+    .results h1 {
         font-size: 2.5rem;
     }
-    .mainButtons > * {
-    margin: 0.5rem;
+    .results h3 {
+    font-size: 1.4rem;
     }
     .quizBox,
     .resultBox1,
@@ -221,22 +239,18 @@
     .credit {
         right: 42px;
     }
-    .results h1 {
-        font-size: 2.5rem;
-    }
-    .results h3 {
-    font-size: 1.4rem;
-    }
 }
+
+
+
+
+// - media query 640 px -
+
 
 @media (max-width: 640px) {
     .goatAcronym {
         font-size: 1.6rem;
         margin-top: 0;
-    }
-    .earvin {
-        margin-right: 0rem;
-        margin-left: 0rem;
     }
     .bubble {
         bottom: 11rem;
@@ -250,10 +264,14 @@
     }
 }
 
+
+
+
+
+// - media query 500 px -
+
+
 @media (max-width: 500px) {
-    // body {
-    //     background: pink;
-    // }
     .mainTitle {
         font-size: 4.5rem;
     }
@@ -273,6 +291,9 @@
         margin-top: 2rem;
         margin-bottom: 0.5rem;
     }
+    .title {
+        margin-bottom: 0;
+    }
     .quizBox {
         padding: 2rem;
     }
@@ -280,9 +301,6 @@
     .resultBox1,
     .resultBox {
         width: 90%;
-    }
-    .title {
-        margin-bottom: 0;
     }
     .choice {
         font-size: 1.2rem; 
@@ -314,13 +332,16 @@
     .copyright p {
         font-size: 0.8rem;
     }
-
 }
 
+
+
+
+
+// - media query 400 px -
+
+
 @media (max-width: 400px) {
-    // body {
-    //     background: brown;
-    // }
     .wrapper {
         padding: 2rem 0.5rem;
     }
