@@ -3,12 +3,12 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    font-weight: 100;
-    margin: 0;
-    padding: 0;
-    background-size: contain;
-    background-repeat: repeat-y;
     background-color: $color-four;
+    background-repeat: repeat-y;
+    background-size: contain;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -18,42 +18,37 @@ body {
 
 
 .wrapper {
-    max-width: 1800px;
     width: 90%;
-    margin: 1rem auto;
     padding: 2rem;
-    background-image: url(../assets/pic2.jpg);
-    background-position: center;
+    max-width: 1800px;
+    margin: 1rem auto;
     text-align: center;
+    background-position: center;
+    background-image: url(../assets/pic2.jpg);
 }
 
 .flex {
     display: flex;
-    flex-direction: column;
     position: center;
+    flex-direction: column;
 }
-
 
 .mainTitle {
-    text-align: center;
-    font-size: 7rem;
-    color: $color-one;
     width: 82%;
     margin: 0 auto;
+    font-size: 7rem;
     font-weight: 300;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-align: center;
     animation: chill 1s;
-    background-color: $color-five;
     border-radius: 10px;
+    background-color: $color-five;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
-
 
 .goatAcronym {
     font-size: 3rem;
-    color: $color-three;
     margin: 1rem auto;
     text-shadow: 2px 2px 2px #000;
-    
 }
 
 .flexRow {
@@ -62,17 +57,15 @@ body {
 }
 
 .playersPic {
+    width: 100%;
     display: flex;
+    position: relative;
+    align-items: center;
     flex-direction: row;
     justify-content: end;
-    align-items: center;
-    position: relative;
-    width: 100%;
 }
 
-.imgDiv1 {
-    width: 20%;
-}
+.imgDiv1,
 .imgDiv2 {
     width: 20%;
 }
@@ -87,21 +80,23 @@ body {
 }
 
 .imgHeader2 {
-    width: 90%;
     margin-right: -4rem;
 }
 
 .imgHeader3 {
-    width: 90%;
     margin-left: -8rem;
+}
+
+.imgHeader2,
+.imgHeader3 {
+    width: 90%;
 }
 
 .imgHeader4 {
     width: 100%;
-    margin-left: -15rem;
     margin-top: -5rem;
+    margin-left: -15rem;
 }
-
 
 .shakes {
     animation: shakes 3s;
@@ -117,39 +112,37 @@ body {
 }
 
 .bubble {
-    padding: 1rem;
-    position: absolute;
     right: 4rem;
     bottom: 20rem;
-    color: $color-four;
-    background: #ffffff98;;
+    padding: 1rem;
+    position: absolute;
     border-radius: 25px;
+    background: #ffffff98;;
 }
 
 .smallBubble {
-    position: absolute;
     right: 10rem;
     bottom: 19rem;
-    background: #ffffff98;
-    color: rgba(0,0,0,0);
     border-radius: 35%;
+    position: absolute;
+    color: rgba(0,0,0,0);
+    background: #ffffff98;
 }
 
 .titleButton {
-    color: $color-three;
-    background-color: rgba(0,0,0,0.9);
+    padding: 1rem;
+    margin-top: 2rem;
     font-size: 2.1rem;
     border-radius: 10px;
-    padding: 1rem;
-    text-transform: uppercase;
-    margin-top: 2rem;
     margin-bottom: 2rem;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0.9);
 }
 
 .titleButton:hover {
-    background-color: rgb(20, 20, 20);
-    box-shadow: 1px 1px 10px #fff;
     transition: all 0.5s;
+    background-color: $color-six;
+    box-shadow: 1px 1px 10px #fff;
 }
 
 
@@ -159,32 +152,31 @@ body {
 
 
 .quizWrapper {
-    padding-top: 4rem;
     display: none;
+    padding-top: 4rem;
 }
 
 .quizBox {
     width: 60%;
-    min-height: 80vh;
     margin: auto;
     padding: 3rem;
-    background: $color-five;
     display: flex; 
+    min-height: 80vh;
+    border-radius: 20px;
     flex-direction: column;
+    background: $color-five;
     text-shadow: 0 1px #000;
     box-shadow: 1px 1px rgba(0,0,0,0.3);
-    border-radius: 20px;
 }
 
 .title {
-    color: rgb(77, 77, 77);
-    font-size: 3.5rem;
-    font-weight: 700;
     margin-top: 0;
-    margin-bottom: 3rem;
-    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3.5rem;
     text-align: center;
     border-radius: 10px;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
     background: rgba(255,255,255, 0.5);
 }
 
@@ -194,24 +186,19 @@ body {
 }
 
 .choice {
-    font-size: 1.5rem;
     width: 80%;
-    color: rgba(17, 17, 17, 0.584);
     margin: 0 auto;
     text-align: start;
+    font-size: 1.5rem;
     padding: 1rem 2rem;
-    background: rgba(255,255,255, 0.5);
     border-radius: 1rem;
     transition: all 0.35s;
+    background: $color-five;
+    color: rgba(17, 17, 17, 0.5);
 }
 
 .choice:hover {
     background: rgba(255,255,255, 0.9);
-}
-
-.choice input[type="radio"]:checked {
-    color: #000;
-    background-color: #17408B;
 }
 
 .mainButtons > * {
@@ -221,25 +208,24 @@ body {
 .mainButtons {
     margin: 0 auto;
 }
-
 button {
-    padding: 0.5rem 1.5rem;
-    margin: 0 auto;
     border: none;
-    font-family: 'Share Tech', sans-serif;
-    font-weight: 300;
-    color: $color-four;
     outline: none;
-    box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    font-weight: 300;
     transition: all 0.35s;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Share Tech', sans-serif;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.5);
 }
+
+
 
 button:hover,
 button:focus {
     font-weight: 500;
-    box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
     transform: scale(1.05);
-    color: $color-three;
+    box-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
 }
 
 button.next {
@@ -252,9 +238,9 @@ button.previous {
 
 button.next,
 button.previous {
-    border-radius: 5px;
-    font-size: 1.5rem;
     margin-top: 3rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
 }
 
 
@@ -262,24 +248,22 @@ button.previous {
 // - results section - 
 
 .results {
-    font-size: 2.5rem;
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: flex-start;
+    font-size: 2.5rem;
     text-align: center;
+    align-items: center;
+    flex-direction: column; 
+    justify-content: flex-start;
 }
 
 .results .scoring {
-    font-size: 3rem;
     padding: 2rem 0;
+    font-size: 3rem;
     text-shadow: 2px 2px 2px #fff;
-    color: black;
 }
 
 .results h1 {
     font-size: 3rem;
-    color: $color-one;
     text-shadow: 2px 2px 2px #000;
 }
 
@@ -297,15 +281,15 @@ button.previous {
 }
 
 .results h2 {
-    font-size: 2.6rem;
-    letter-spacing: 1.2px;
     margin-top: 1rem;
+    font-size: 2.6rem;
     animation: chill 2s;
+    letter-spacing: 1.2px;
 }
 
 .results h3 {
-    font-size: 2rem;
     margin: 0.7rem;
+    font-size: 2rem;
 }
 
 .results p {
@@ -315,11 +299,11 @@ button.previous {
 }
 
 .resultBox1  {
-    padding: 1rem;
     width: 60%;
+    padding: 1rem;
     margin: 1rem auto; 
-    background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
+    background-color: $color-five;
 }
 
 .resultBox1 p {
@@ -332,34 +316,34 @@ button.previous {
 }
 
 .grey {
-    color: rgb(99, 97, 97);
+    color: $color-seven;
 }
 
 .resultBox {
     width: 65%;
     margin: 1rem auto; 
-    background-color: rgba(255,255,255,0.6);
     border-radius: 10px;
     padding: 0 1rem 1rem 1rem;
+    background-color: $color-five;
 }
 
 .resultBox img {
     margin-top: 2rem;
 }
 
+
 .resultBox .highlight {
+    padding: 0.5rem;
+    margin: 1rem auto;
     font-size: 1.7rem;
     letter-spacing: 1.2px;
-    padding: 0.5rem;
-    color: $color-four;
     background: rgba(255,255,255,0.5);
-    margin: 1rem auto;
 }
 
 .resultBox .highlight:hover {
-    background: rgba(255,255,255,0.8);
-    transform: scale(1.1);
     transition: all 0.3s;
+    transform: scale(1.1);
+    background: rgba(255,255,255,0.8);
 }
 
 .timothy {
@@ -367,39 +351,32 @@ button.previous {
 }
 
 .statsInfo {
-    color: rgb(143,7,7);
-    text-shadow: 1px 1px 1px #000;
+    color: $color-eight;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .youtube {
     font-size: 1.5rem;
-    background: rgba(255, 255, 0, 0.3);
     border-radius: 0.3rem;
+    background: rgba(255, 255, 0, 0.3);
 }
 
 .youtube a:hover {
-    color: $color-six;
     text-decoration: underline;
 }
 
 .portfolio {
-    color: black;
-    text-decoration: none;
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 button.restart {
     font-size: 2rem;
-    color: $color-four;
-    background-color: green;
-    border-radius: 10px;
     margin-top: 1rem;
+    border-radius: 10px;
     transition: all 0.3s;
-}
-
-button.restart:hover {
-    color: $color-three;
+    background-color: $color-nine;
 }
 
 
@@ -409,27 +386,23 @@ button.restart:hover {
 
 
 .credit {
-    color: $color-three;
-    width: 100%;
-    text-align: right;
-    font-size: 0.8rem;
-    position: absolute;
     top: -40px;
     right: 80px;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: right;
+    position: absolute;
 }
 
 .copyright {
-    text-align: center;
-    background-color: $color-four;
-    letter-spacing: 1.5px;
-    color: $color-three;
     padding: 0.5rem 0;
     position: relative;
-    
+    text-align: center;
+    letter-spacing: 1.5px;
+    background-color: $color-four;
 }
 
 .copyright a {
-    color: $color-three;
     text-decoration: none;;
 }
 
@@ -437,8 +410,38 @@ button.restart:hover {
     font-size: 1rem;
 }
 
+// - grouped selectors - 
 
+.mainTitle,
+.results h1 {
+    color: $color-one;
+}
 
+.goatAcronym,
+.titleButton,
+button:hover,
+button:focus,
+button.restart:hover,
+.credit,
+.copyright,
+.copyright a {
+    color: $color-three;
+}
+
+.bubble,
+.choice input[type="radio"]:checked,
+button,
+.results .scoring,
+.resultBox .highlight,
+.portfolio,
+button.restart  {
+    color: $color-four;
+}
+
+.title,
+.youtube a:hover {
+    color: $color-six;
+}
 
 // - keyframes list - 
 
