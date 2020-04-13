@@ -359,6 +359,7 @@ function nextQuestion() {
             <button class="restart"> Restart </button>`
         // - when results have been displayed, play audio function - 
         playAudio();
+        console.log('all images, audio are not mine and are owned by their respective creators');
     }
     // - when user clicks next question, call the createQuestions function that uses mainQuestion variable as the current number - 
     createQuestions(mainQuestion);

@@ -236,68 +236,84 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-weight: 100;
-  background-size: contain;
-  background-repeat: repeat-y;
-  background-color: #000;
   font-family: 'Oswald', sans-serif;
+  background-color: #000;
+  background-repeat: repeat-y;
+  background-size: contain;
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper {
   width: 90%;
+  padding: 2rem;
   max-width: 1800px;
   margin: 1rem auto;
-  padding: 2rem;
-  background-image: url(../assets/pic2.jpg);
-  background-position: center;
   text-align: center;
+  background-position: center;
+  background-image: url(../assets/pic2.jpg);
 }
 
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: center;
 }
 
 .mainTitle {
-  text-align: center;
-  font-size: 7rem;
-  color: #C9082A;
   width: 82%;
   margin: 0 auto;
+  font-size: 7rem;
   font-weight: 300;
-  text-shadow: 2px 2px 2px black;
+  text-align: center;
   -webkit-animation: chill 1s;
           animation: chill 1s;
-  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-shadow: 2px 2px 2px black;
+}
+
+.goatAcronym {
+  font-size: 3rem;
+  margin: 1rem auto;
+  text-shadow: 2px 2px 2px #000;
 }
 
 .flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
 }
 
-.goatAcronym {
-  font-size: 3rem;
-  color: #FFF;
-  margin: 1rem auto;
-  text-shadow: 2px 2px 2px #000;
+.playersPic {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
-.imgDiv1 {
-  width: 20%;
-}
-
+.imgDiv1,
 .imgDiv2 {
   width: 20%;
 }
@@ -312,126 +328,109 @@ body {
 }
 
 .imgHeader2 {
-  width: 90%;
   margin-right: -4rem;
 }
 
 .imgHeader3 {
-  width: 90%;
   margin-left: -8rem;
+}
+
+.imgHeader2,
+.imgHeader3 {
+  width: 90%;
 }
 
 .imgHeader4 {
   width: 100%;
-  margin-left: -15rem;
   margin-top: -5rem;
+  margin-left: -15rem;
 }
 
 .shakes {
   -webkit-animation: shakes 3s;
           animation: shakes 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 .shake {
   -webkit-animation: shake 2s;
           animation: shake 2s;
+}
+
+.shake,
+.shakes {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
-.playersPic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  width: 100%;
-}
-
 .bubble {
-  padding: 1rem;
-  position: absolute;
   right: 4rem;
   bottom: 20rem;
-  color: #000;
-  background: #ffffff98;
+  padding: 1rem;
+  position: absolute;
   border-radius: 25px;
+  background: #ffffff98;
 }
 
 .smallBubble {
-  position: absolute;
   right: 10rem;
   bottom: 19rem;
-  background: #ffffff98;
-  color: rgba(0, 0, 0, 0);
   border-radius: 35%;
+  position: absolute;
+  color: rgba(0, 0, 0, 0);
+  background: #ffffff98;
 }
 
 .titleButton {
-  color: #FFF;
-  background-color: rgba(0, 0, 0, 0.9);
+  padding: 1rem;
+  margin-top: 2rem;
   font-size: 2.1rem;
   border-radius: 10px;
-  padding: 1rem;
-  text-transform: uppercase;
-  margin-top: 2rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .titleButton:hover {
-  background-color: #141414;
-  -webkit-box-shadow: 1px 1px 10px #fff;
-          box-shadow: 1px 1px 10px #fff;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  background-color: #383535;
+  -webkit-box-shadow: 1px 1px 10px #fff;
+          box-shadow: 1px 1px 10px #fff;
 }
 
 .quizWrapper {
-  padding-top: 4rem;
   display: none;
+  padding-top: 4rem;
 }
 
 .quizBox {
   width: 60%;
-  min-height: 80vh;
   margin: auto;
   padding: 3rem;
-  background: rgba(255, 255, 255, 0.6);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 80vh;
+  border-radius: 20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: rgba(255, 255, 255, 0.6);
   text-shadow: 0 1px #000;
   -webkit-box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 1px 1px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
 }
 
 .title {
-  color: #4d4d4d;
-  font-size: 3.5rem;
-  font-weight: 700;
   margin-top: 0;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.5rem;
   text-align: center;
   border-radius: 10px;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
   background: rgba(255, 255, 255, 0.5);
-  border: 2px solid black;
 }
 
 .question {
@@ -440,19 +439,16 @@ body {
 }
 
 .choice {
-  font-size: 1.5rem;
   width: 80%;
-  color: rgba(17, 17, 17, 0.584);
   margin: 0 auto;
   text-align: start;
+  font-size: 1.5rem;
   padding: 1rem 2rem;
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 1rem;
-}
-
-.choice input[type="radio"]:checked {
-  color: #000;
-  background-color: #17408B;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  background: rgba(255, 255, 255, 0.6);
+  color: rgba(17, 17, 17, 0.5);
 }
 
 .choice:hover {
@@ -468,23 +464,25 @@ body {
 }
 
 button {
-  padding: 0.5rem 1.5rem;
-  margin: 0 auto;
   border: none;
-  font-family: 'Share Tech', sans-serif;
-  font-weight: 300;
-  color: #000;
   outline: none;
+  margin: 0 auto;
+  font-weight: 300;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  padding: 0.5rem 1.5rem;
+  font-family: 'Share Tech', sans-serif;
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 button:hover,
 button:focus {
   font-weight: 500;
-  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  color: #FFF;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 button.next {
@@ -497,59 +495,37 @@ button.previous {
 
 button.next,
 button.previous {
-  border-radius: 5px;
-  font-size: 1.5rem;
   margin-top: 3rem;
-}
-
-.results .initialText p {
-  font-size: 2.6rem;
-}
-
-.results .scoring {
-  font-size: 3rem;
-  padding: 2rem 0;
-  text-shadow: 2px 2px 2px #fff;
-  color: black;
-}
-
-.resultBox1 {
-  padding: 1rem;
-  width: 60%;
-  margin: 1rem auto;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-}
-
-.resultBox1 p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
 }
 
 .results {
-  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 2.5rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  text-align: center;
 }
 
-.grey {
-  color: #636161;
+.results .scoring {
+  padding: 2rem 0;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px #fff;
 }
 
 .results h1 {
   font-size: 3rem;
-  color: #C9082A;
   text-shadow: 2px 2px 2px #000;
 }
 
@@ -567,22 +543,16 @@ button.previous {
 }
 
 .results h2 {
-  font-size: 2.6rem;
-  letter-spacing: 1.2px;
   margin-top: 1rem;
+  font-size: 2.6rem;
   -webkit-animation: chill 2s;
           animation: chill 2s;
-}
-
-.statsInfo {
-  color: #8f0707;
-  text-shadow: 1px 1px 1px #000;
-  letter-spacing: 2px;
+  letter-spacing: 1.2px;
 }
 
 .results h3 {
-  font-size: 2rem;
   margin: 0.7rem;
+  font-size: 2rem;
 }
 
 .results p {
@@ -591,93 +561,143 @@ button.previous {
   border-radius: 10px;
 }
 
+.resultBox1 {
+  width: 60%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.resultBox1 p {
+  font-size: 2rem;
+}
+
+.results .initialText p {
+  font-size: 2.6rem;
+}
+
+.grey {
+  color: #636161;
+}
+
 .resultBox {
   width: 65%;
   margin: 1rem auto;
-  background-color: rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   padding: 0 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .resultBox img {
   margin-top: 2rem;
+  width: 100%;
+}
+
+.resultBox .highlight {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  font-size: 1.7rem;
+  letter-spacing: 1.2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.resultBox .highlight:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.timothy {
+  width: 70%;
+}
+
+.statsInfo {
+  color: #8f0707;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .youtube {
   font-size: 1.5rem;
-  background: rgba(255, 255, 0, 0.3);
   border-radius: 0.3rem;
-}
-
-.portfolio {
-  color: black;
-  text-decoration: none;
-  font-size: 1.5rem;
+  background: rgba(255, 255, 0, 0.3);
 }
 
 .youtube a:hover {
-  color: #383535;
   text-decoration: underline;
 }
 
-.resultBox .highlight {
-  font-size: 1.7rem;
-  letter-spacing: 1.2px;
-  padding: 0.5rem;
-  color: #000;
-  background: rgba(255, 255, 255, 0.5);
-  margin: 1rem auto;
-}
-
-.resultBox .highlight:hover {
-  background: rgba(255, 255, 255, 0.8);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.portfolio {
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 button.restart {
   font-size: 2rem;
-  color: #000;
-  background-color: green;
-  border-radius: 10px;
   margin-top: 1rem;
+  border-radius: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-button.restart:hover {
-  color: #FFF;
+  background-color: green;
 }
 
 .credit {
-  color: #FFF;
-  width: 100%;
-  text-align: right;
-  font-size: 0.8rem;
-  position: absolute;
   top: -40px;
   right: 80px;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: right;
+  position: absolute;
 }
 
 .copyright {
-  text-align: center;
-  background-color: #000;
-  letter-spacing: 1.5px;
-  color: #FFF;
   padding: 0.5rem 0;
   position: relative;
+  text-align: center;
+  letter-spacing: 1.5px;
+  background-color: #000;
 }
 
 .copyright a {
-  color: #FFF;
   text-decoration: none;
 }
 
 .copyright p {
   font-size: 1rem;
-  letter-spacing: 0.3rem;
+}
+
+.mainTitle,
+.results h1 {
+  color: #C9082A;
+}
+
+.goatAcronym,
+.titleButton,
+button:hover,
+button:focus,
+button.restart:hover,
+.credit,
+.copyright,
+.copyright a {
+  color: #FFF;
+}
+
+.bubble,
+.choice input[type="radio"]:checked,
+button,
+.results .scoring,
+.resultBox .highlight,
+.portfolio,
+button.restart {
+  color: #000;
+}
+
+.title,
+.youtube a:hover {
+  color: #383535;
 }
 
 @-webkit-keyframes chill {
@@ -946,12 +966,15 @@ button.restart:hover {
   }
 }
 
+@media (max-width: 1600px) {
+  .resultBox img {
+    width: 90%;
+  }
+}
+
 @media (max-width: 1400px) {
   .imgHeader3 {
     margin-left: -7rem;
-  }
-  .resultBox img {
-    width: 90%;
   }
   .bubble {
     bottom: 19rem;
@@ -959,21 +982,22 @@ button.restart:hover {
   .smallBubble {
     bottom: 18rem;
   }
+  .resultBox img {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1200px) {
   .goatAcronym {
     margin-top: 1rem;
   }
-  .imgHeader1 {
+  .imgHeader1,
+  .imgHeader2 {
     margin-right: -2rem;
   }
   .imgHeader2,
   .imgHeader3 {
     width: 100%;
-  }
-  .imgHeader2 {
-    margin-right: -2rem;
   }
   .imgHeader3 {
     margin-left: -4rem;
@@ -1102,11 +1126,17 @@ button.restart:hover {
   .goatAcronym {
     font-size: 2rem;
   }
-  .imgHeader4 {
-    margin-left: -1rem;
+  .titleButton {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 2.5rem;
   }
   .imgDiv2 {
     width: 25%;
+  }
+  .imgHeader4 {
+    margin-left: -1rem;
   }
   .bubble {
     bottom: 12rem;
@@ -1124,14 +1154,14 @@ button.restart:hover {
     font-size: 1.2rem;
     padding: 0.5rem 1.2rem;
   }
-  .titleButton {
-    font-size: 1.5rem;
-  }
-  .title {
-    font-size: 2.5rem;
-  }
   .mainButtons > * {
     margin: 0.5rem;
+  }
+  .results h1 {
+    font-size: 2.5rem;
+  }
+  .results h3 {
+    font-size: 1.4rem;
   }
   .quizBox,
   .resultBox1,
@@ -1152,22 +1182,12 @@ button.restart:hover {
   .credit {
     right: 42px;
   }
-  .results h1 {
-    font-size: 2.5rem;
-  }
-  .results h3 {
-    font-size: 1.4rem;
-  }
 }
 
 @media (max-width: 640px) {
   .goatAcronym {
     font-size: 1.6rem;
     margin-top: 0;
-  }
-  .earvin {
-    margin-right: 0rem;
-    margin-left: 0rem;
   }
   .bubble {
     bottom: 11rem;
@@ -1185,6 +1205,9 @@ button.restart:hover {
   .mainTitle {
     font-size: 4.5rem;
   }
+  .strongGoat {
+    display: none;
+  }
   .bubble {
     bottom: -4rem;
     right: -1rem;
@@ -1198,6 +1221,9 @@ button.restart:hover {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
   }
+  .title {
+    margin-bottom: 0;
+  }
   .quizBox {
     padding: 2rem;
   }
@@ -1205,9 +1231,6 @@ button.restart:hover {
   .resultBox1,
   .resultBox {
     width: 90%;
-  }
-  .title {
-    margin-bottom: 0;
   }
   .choice {
     font-size: 1.2rem;
